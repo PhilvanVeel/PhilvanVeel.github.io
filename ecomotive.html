@@ -26,9 +26,64 @@
     <title>Ecomotive</title>
 </head>
 <body>
-    <style>
+    
 
-        .container {
+        <style >
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: lightgrey;
+                }
+
+        .active {
+            background-color: lightgrey;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .container
+
+        {
             width: unset;
             padding: 0px;
         }
@@ -90,6 +145,7 @@
             font-family: 'Questrial', sans-serif;
             text-align: center;
         }
+
         .col1 p {
             font-family: 'Questrial', sans-serif;
             color: #262626;
@@ -97,19 +153,28 @@
             margin-top: 7px;
             margin-bottom: 7px;
         }
-        ul {
-            list-style-type: square;
-            display: table;
-            margin: 0 auto;
-        }
+
+ 
     </style>
 
-    <nav class="navbar " style=" background-color: #FFFFFF; height: 7vh; ">
-        <span class="navbar-brand mb-0 h1 ">
-            <img src="philiplogo.png" alt="logo Philip van Veelen" style="height: 30px; float: left; object-fit: contain">
-            <p style=" margin-left: 50px;" color: #4F4F51;> Philip van Veelen	</p>
-        </span>
-    </nav>
+
+    <div>
+        <ul style="margin: 0; display: inline-block; vertical-align: top;">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="dropdown" style=" display: inline-block; vertical-align: top; color:black;" >
+            <a style=" color: black;" href="#about">Projects</a><div class="dropdown-content">
+                <a class="active" style="display: block; text-align: left; color: black; " href="Ecomotive.html">Ecomotive</a><br>
+                <a style="display: block; text-align: left; color: black; " href="themis.html">Themis</a><br>
+                <a style="display: block; text-align: left; color: black; " href="muji.html">Quarantine</a><br>
+                <a style="display: block; text-align: left; color: black; " href="themis.html">Themis</a>
+            </div>
+
+
+        </div>
+    </div>
 
     <div class="container" style="max-width: 100%;">
 
@@ -135,105 +200,105 @@
 
         <!--3 coole statestieken-->
         <!--
-    <div class="row" style="margin-top:50px;">
-        <div class="col1">
-            <h2>Innovations</h2>
+        <div class="row" style="margin-top:50px;">
+            <div class="col1">
+                <h2>Innovations</h2>
 
-            <ul>
-                <li>Chassis: Flax and PP</li>
-                <li>Bodypanels: recycled plastics</li>
-                <li>Recycled E-waste infotainment system</li>
-                <li>Direct Air Capture carbon filters</li>
-                <li>Recycled 3d printed interior trim</li>
-                <li>Ocean waste interior fabric</li>
+                <ul>
+                    <li>Chassis: Flax and PP</li>
+                    <li>Bodypanels: recycled plastics</li>
+                    <li>Recycled E-waste infotainment system</li>
+                    <li>Direct Air Capture carbon filters</li>
+                    <li>Recycled 3d printed interior trim</li>
+                    <li>Ocean waste interior fabric</li>
 
 
-            </ul>
+                </ul>
+            </div>
+            <div class="col1" style="border-left-style: solid;">
+
+                <h2>Features</h2>
+
+                <ul>
+                    <li>Mirror cameras?</li>
+                    <li>Flax monocoque</li>
+                    <li>Recycled plastic body panels</li>
+                    <li>CO2 neutral interior</li>
+                    <li>Sporty handling </li>
+                    <li>Modern design</li>
+
+                </ul>
+            </div>
+
+            <div class="col1" style="border-left-style: solid;">
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Chief design function</li>
+                    <li>Exterior design concept</li>
+                    <li>Key sketching</li>
+                    <li>Iterative 3d Models</li>
+                    <li>Key sketching</li>
+                    <li>working with multiple disciplinary team</li>
+
+                </ul>
+            </div>
+
+
+
         </div>
-        <div class="col1" style="border-left-style: solid;">
+        <div class="row" style="margin-top:50px;">
+            <div class="col1">
 
-            <h2>Features</h2>
+                <ul>
+                    <li>Chassis: Flax and PP</li>
+                    <li>Bodypanels: recycled plastics</li>
+                    <li>Recycled E-waste infotainment system</li>
+                    <li>Direct Air Capture carbon filters</li>
+                    <li>Recycled 3d printed interior trim</li>
+                    <li>Ocean waste interior fabric</li>
 
-            <ul>
-                <li>Mirror cameras?</li>
-                <li>Flax monocoque</li>
-                <li>Recycled plastic body panels</li>
-                <li>CO2 neutral interior</li>
-                <li>Sporty handling </li>
-                <li>Modern design</li>
 
-            </ul>
+                </ul>
+            </div>
+            <div class="col1" style="border-left-style: solid;">
+
+                <ul>
+                    <li>Mirror cameras?</li>
+                    <li>Flax monocoque</li>
+                    <li>Recycled plastic body panels</li>
+                    <li>CO2 neutral interior</li>
+                    <li>Sporty handling </li>
+                    <li>Modern design</li>
+
+                </ul>
+            </div>
+
+            <div class="col1" style="border-left-style: solid;">
+
+
+                <ul>
+                    <li>Chief design function</li>
+                    <li>Exterior design concept</li>
+                    <li>Key sketching</li>
+                    <li>Iterative 3d Models</li>
+                    <li>Key sketching</li>
+                    <li>working with multiple disciplinary team</li>
+
+                </ul>
+            </div>
+                  <div class="col1" style="border-left-style: solid;">
+        <p>Recycled E-waste infotainment system</p>
+        <p>Direct Air Capture carbon filters</p>
+        <p>Recycled 3d printed interior trim</p>
+        <p>Ocean waste interior fabric</p>
         </div>
 
-        <div class="col1" style="border-left-style: solid;">
 
-            <h2>Contributions</h2>
-
-            <ul>
-                <li>Chief design function</li>
-                <li>Exterior design concept</li>
-                <li>Key sketching</li>
-                <li>Iterative 3d Models</li>
-                <li>Key sketching</li>
-                <li>working with multiple disciplinary team</li>
-
-            </ul>
         </div>
 
-
-
-    </div>
-    <div class="row" style="margin-top:50px;">
-        <div class="col1">
-
-            <ul>
-                <li>Chassis: Flax and PP</li>
-                <li>Bodypanels: recycled plastics</li>
-                <li>Recycled E-waste infotainment system</li>
-                <li>Direct Air Capture carbon filters</li>
-                <li>Recycled 3d printed interior trim</li>
-                <li>Ocean waste interior fabric</li>
-
-
-            </ul>
-        </div>
-        <div class="col1" style="border-left-style: solid;">
-
-            <ul>
-                <li>Mirror cameras?</li>
-                <li>Flax monocoque</li>
-                <li>Recycled plastic body panels</li>
-                <li>CO2 neutral interior</li>
-                <li>Sporty handling </li>
-                <li>Modern design</li>
-
-            </ul>
-        </div>
-
-        <div class="col1" style="border-left-style: solid;">
-
-
-            <ul>
-                <li>Chief design function</li>
-                <li>Exterior design concept</li>
-                <li>Key sketching</li>
-                <li>Iterative 3d Models</li>
-                <li>Key sketching</li>
-                <li>working with multiple disciplinary team</li>
-
-            </ul>
-        </div>
-              <div class="col1" style="border-left-style: solid;">
-    <p>Recycled E-waste infotainment system</p>
-    <p>Direct Air Capture carbon filters</p>
-    <p>Recycled 3d printed interior trim</p>
-    <p>Ocean waste interior fabric</p>
-    </div>
-
-
-    </div>
-
-    <!--text ofzo-->
+        <!--text ofzo-->
 
         <div class="row" style="margin-top:50px;">
             <div class="col1">
