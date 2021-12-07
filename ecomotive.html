@@ -1,34 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Sarpanch:wght@800;900&display=swap" rel="stylesheet">
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Questrial&family=Sarpanch:wght@800;900&display=swap" rel="stylesheet">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
-
+    <!-- Website Title -->
     <title>Ecomotive</title>
-</head>
-<body>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Google web font  -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 
 
     <style>
+        h2 {
+            font-size: 2rem;
+            line-height: 3rem;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+            font-weight: 300;
+            font-family: 'Source Sans Pro', sans-serif;
+        } 
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -41,17 +54,31 @@
             float: left;
         }
 
-            li a {
-                display: block;
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+        li1 {
+            text-decoration: underline;
+            margin-top: 10px;
+            display: block;
+            float: none;
+            font-size: large;
+        }
 
-                li a:hover:not(.active) {
-                    background-color: lightgrey;
-                }
+        li2 {
+            display: block;
+            float: none;
+            font-size: medium;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover:not(.active) {
+                background-color: lightgrey;
+            }
 
         .active {
             background-color: lightgrey;
@@ -80,81 +107,13 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
-        .container {
-            width: unset;
-            padding: 0px;
-        }
-
-        .col1 {
-            padding: 0;
-            margin: 0;
-            width: 25%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .col {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: inherit;
-        }
-
-        .row {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-        }
-
-            .row h1 {
-                font-family: 'Lexend Exa', sans-serif;
-                color: #FFFFFF;
-                text-align: left;
-            
-                
-               
-            }
-
-            .row h2 {
-                font-family: 'Signika', sans-serif;
-                color: black;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            }
-
-        .h3 {
-            font-family: 'Signika', sans-serif;
-        }
-
-        .col p {
-            width: 70vw;
-            font-family: 'Questrial', sans-serif;
-            text-align: center;
-        }
-
-        .col p {
-            width: 70vw;
-            font-family: 'Questrial', sans-serif;
-            text-align: center;
-        }
-
-        .col1 p {
-            font-family: 'Questrial', sans-serif;
-            color: #262626;
-            text-align: center;
-            margin-top: 7px;
-            margin-bottom: 7px;
-        }
     </style>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
 
     <div>
-        <img src="philiplogo.png" alt="logo Philip van Veelen" style="height: 30px; float: left; object-fit: contain; margin:10px;">
         <ul style="margin: 0; display: inline-block; vertical-align: top;">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -162,163 +121,679 @@
         </ul>
         <div class="dropdown" style=" display: inline-block; vertical-align: top; color:black;">
             <a style=" color: black;" href="#about">Projects</a><div class="dropdown-content">
-                <a class="active" style="display: block; text-align: left; color: black; " href="ecomotive.html">Ecomotive</a><br>
+                <a class="active" style="display: block; text-align: left; color: black; " href="Ecomotive.html">Ecomotive</a><br>
                 <a style="display: block; text-align: left; color: black; " href="themis.html">Themis</a><br>
-                <a style="display: block; text-align: left; color: black; " href="muji.html">Quarantine</a><br>
-                <a style="display: block; text-align: left; color: black; " href="themis.html">Themis</a>
+                    <a style="display: block; text-align: left; color: black; " href="muji.html">Quarantine</a><br>
+                    <a style="display: block; text-align: left; color: black; " href="themis.html">Themis</a>
             </div>
 
 
         </div>
     </div>
 
-    <div class="container" style="max-width: 100%;">
 
-        <!--image-->
-        <div class="row" style="height: 70vh; overflow-y: hidden; ">
-            <img src="./rear shot.jpg" alt="Alternate Text" style=" width:100%; overflow-x: hidden; overflow-y:hidden; " ;
-                 width: 100vw;" />
-        </div>
-        </div>
-        <!--title-->
-
-
-    <div class="row" style="background-color: #1A1A1A;">
-
-        <div class="col" style=" float: left; ">
-        <h1>Ecomotive</h1>
-    </div>
-    <div class="col">
-        
-    </div>
-          
-        </div>
-
-
-        <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
-            <div class="col1">
-                <p> Chassis: Flax and PP</p>
-            </div>
-
-            <div class="col1" style="border-left-style: solid; border-color: #b3b3b3">
-                <p>Recycled E-waste infotainment system</p>
-            </div>
-
-            <div class="col1" style="border-left-style: solid; border-color: #b3b3b3">
-                <p>Direct Air Capture carbon filters</p>
-            </div>
-
-            <div class="col1" style="border-left-style: solid; border-color: #b3b3b3">
-                <p>Recycled plastic body panels</p>
-            </div>
-
-
-
-        </div>
-
-        <div class="row" style="margin-top:50px;">
-            <div class="col">
-
-                <H2>JANE</H2>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:30px;">
-            <div class="col">
-
-
-                <H3 style="color: #6e6e6e; ">Making sustainability exciting, desirable and uncompromising'</H3>
-
-
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:30px;">
-            <div class="col">
-
-                <p style=" width: 70vw; ">
-                    Ecomotive is a student team at the University of Technology Eindhoven that innovates in building cars with a low environmental footprint. Where other teams excel at efficiency in driving, Ecomotive focusses on the build process, materials and lifecycle. Often car manufacturers use lightweight composites to increase efficiency, but these materials are toxic, and after the car’s lifecycle has ended, these materials cannot be recycled.
-                    <br />
-                    <br />
-
-                    We want to change the automotive industry by proving that  cars can be manufactured in a more sustainable way, without compromising the design, use and quality of the vehicle. This year we decided to reach for the stars and archive a CO2 neutral car, by employing smart engineering solutions, partnering up with innovative companies and consulting experts in the field. The car is still currently under development.
-
-                </p>
-
-
-
-            </div>
-        </div>
-
-        <!--mooie plaatjennnssss-->
-        <div class="row" style="  margin: 0;  background-color: #F2F2F2; ">
-
-            <div class="row" style="background-color: #73859D; ">
-
-                <div class="col" style=" float: left; ">
-                    <h1>My Role</h1>
-                </div>
-                <div class="col">
-
-                </div>
-
-            </div>
-
-
-            <div class="row" style="width: 100%; height: 60vh; ">
-                <div class="col" style="display: inline-block;  ">
-
-                    <img src="./eco sketches.jpg" alt="Alternate Text" style="  float:left; margin: 40px; mix-blend-mode: multiply; width:70vw; " />
-                </div>
-                <div class="col" style="display: inline-block; width:none; margin:0; ">
-
-                    <p style="width:unset; margin-right:20px; margin:auto; margin-top:20%; text-align:left;">
-                        Whereas previous Ecomotive cars are made to look more friendly and practical, this year we wanted to create a design that is more sporty, serious and recognisable.
-                        Jane is not another grocery getter or urban pod, but will be the evidence that sustainability can be exciting, desirable and uncompromising.
-                        Through the use of reoccurring shapes, motives and graphics, the car is designed not only to make a strong first impression, but an impression that lasts.
-                    </p>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
-        <br>
-
-  
-
-        <div class="row" style="height:200px;">
-            <div class="col" style="height:min-content;">
-
-                <H2>Teamwork makes the dream work</H2>
-            </div>
-
-            <div class="row">
-
-
+    <!-- Header -->
+    <header id="header" class="header" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('images/HeroshotJANE.jpg') center center no-repeat; ">
+        <div class="header-content">
+            <div class="container">
                 <div class="row">
-                    <div class="col" style="height:min-content;">
-                        <p style=" width: 70vw; ">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Ecomotive</h1>
+                            <p class="p-heading p-large">
+                                Making sustainability exciting, desirable and uncompromising
+                            </p>
+                            <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-                            Being Chief Design is the biggest, most challenging and most rewarding design experience iencountered yet.
-                            Working with an interdiscplinary team of over 30 students poses a lot of challenges.
-                            It was a pleasure to be involved in an extracurriculair program, in which many students were motivated to create the sustainable car of the future.
-                            The student team consisted of team mechanical, team electrical and software, team external relations and team design.
-                            Interdiscplinary communication can be challenging, but working closely together it is vital to archieve innovation.
 
-                        </p>
+
+    <!-- Services -->
+    <!-- Details 1 -->
+    <div  id="intro" class="accordion" style=" height: auto; margin-top:20px;">
+        <div style="background-size: contain; width: 50%; height: 100%; display: inline-block;"> <img src="images/eco sketches.jpg" alt="Alternate Text" style="width: 100%; " />
+
+
+        </div> <!-- end of tabs --><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2" style="width:auto;">
+
+        <!-- Accordion -->
+        <div class="accordion-container" id="accordionOne">
+            <h2>What is Ecomotive?</h2>
+
+            <p>  Ecomotive is a student team at the University of Technology Eindhoven that innovates in building cars with a low environmental footprint. Where other teams excel at efficiency in driving, Ecomotive focusses on the build process, materials and lifecycle. Often car manufacturers use lightweight composites to increase efficiency, but these materials are toxic, and after the car’s lifecycle has ended, these materials cannot be recycled.</p>
+        </div> <!-- end of accordion-container -->
+        <!-- end of accordion -->
+
+    </div> <!-- end of area-2 -->
+    </div> <!-- end of accordion -->
+    <!-- end of details 1 -->
+    <!-- Details 2 -->
+    <div class="tabs">
+        <div class="area-1">
+            <div class="tabs-container">
+
+
+                <!-- end of tabs links -->
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1" style="background-color:unset;">
+                        <h2>This year's mission'</h2>
+                        <p> We want to change the automotive industry by proving that  cars can be manufactured in a more sustainable way, without compromising the design, use and quality of the vehicle. This year we decided to reach for the stars and archive a CO2 neutral car, by employing smart engineering solutions, partnering up with innovative companies and consulting experts in the field. The car is still currently under development.</p>
+
+                        <!-- Progress Bars -->
+                        <!--<div class="progress-container">
+                            <div class="title">Business Development 100%</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Opportunity Spotting 76%</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Online Marketing 90%</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
+
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
+                        <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Ask for a quote and start improving your business</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div style="width: 50%; height: 100%; display: inline-block;"> <img src="./rear shot.jpg" alt="Alternate Text" style="width: 100%;" /></div>
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
+
+
+
+    <div id="services" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>Features</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/WhatsApp Image 2021-10-04 at 11.35.43.jpeg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">3D printed sustainable monocoque</h3>
+                            <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">recyclable glass fibre infused thermoplastics</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">fully 3d printed chassis and body panels</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Direct air capture filters</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">beautiful panorama roof</div>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </div>
-                </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/WhatsApp Image 2021-11-24 at 22.25.07.jpeg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">high tech design interior</h3>
+                            <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Custom infotainment screen</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">mirror cameras</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Vertical supercar doors</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">UV anti bacterial system</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">surround sound system</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">sustainable interior materials</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">recyclable batteries</div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/thumbnail.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">cutting edge styling</h3>
+                            <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">designed and build in one year</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">inspired by nature</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">low drag coefficient</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">state of the art light lignatures by Hella</div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+    <!-- Intro -->
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+
+                        <h2>Design process</h2>
+                        Ecomotive is a student team at the University of Technology Eindhoven that innovates in building cars with a low environmental footprint. Where other teams excel at efficiency in driving, Ecomotive focusses on the build process, materials and lifecycle. Often car manufacturers use lightweight composites to increase efficiency, but these materials are toxic, and after the car’s lifecycle has ended, these materials cannot be recycled.
+                        <br />
+                        <br />
+
+                        We want to change the automotive industry by proving that  cars can be manufactured in a more sustainable way, without compromising the design, use and quality of the vehicle. This year we decided to reach for the stars and archive a CO2 neutral car, by employing smart engineering solutions, partnering up with innovative companies and consulting experts in the field. The car is still currently under development.
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/sideviewjane.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+    <!-- Call Me -->
+    <!-- Projects -->
+    <div id="projects" class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>ECOMOTIVE gallery</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Exterior sketches</span></div><img src="images/eco sketchessquare.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Interior sketches</span></div><img src="images/stuurkleinmooi.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Project video</span></div><img src="images/explodedthemissquare.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Final render</span></div><img src="images/popo.jpg" alt="alternative"></a>
+                        </div>
+
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of projects -->
+    <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/eco sketchessquare.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h>Research</h>
+                <hr class="line-heading">
+                <p>Firstly an interview was conducted with the police department of Bolswaart. Then a value proposition canvas was created, along with an UI positioning exploration and a UI flow chart. After iterating to archieve optimal functionality, the seating, dashboard and interface were designed. The exterior was the last step and was not the main focus of this project. Then all components were 3D modelled and evaluated by the target group.</p>
             </div>
+        </div> <!-- end of col -->
+        <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
 
-
+    </div> <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/4aad0480-d1bc-46c4-be25-2aeb9352c0cd.jfif" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Steering wheel/ computer</h3>
+                <hr class="line-heading">
+                <p>work in progress</p>
+            </div>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+    </div> <!-- end of col -->
+    <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Project video</h3>
+                <hr class="line-heading">
+                <p></p>
+            </div>
+        </div> <!-- end of col -->
+        <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+
+    </div> <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/popo.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Final Render</h3>
+                <hr class="line-heading">
+                <p></p>
+            </div>
+            <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Joy Moments</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Spark Events</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Casual Wear</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Zazoo Apps</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div>
+
+    <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of project lightboxes -->
+    <!-- Team -->
+    <!-- <div class="basic-2">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-12">
+                     <h2>Our Team Of Consultants</h2>
+                     <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                 </div> <!-- end of col -->
+    <!--  </div> <!-- end of row -->
+    <!--   <div class="row">
+           <div class="col-lg-12">
+
+               <!-- Team Member -->
+    <!-- <div class="team-member">
+         <div class="image-wrapper">
+             <img class="img-fluid" src="images/team-1.png" alt="alternative">
+         </div> <!-- end of image-wrapper -->
+    <!--<p class="p-large">John Whitelong</p>
+    <p class="job-title">General Manager</p>
+    <span class="social-icons">
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+        </span>
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </span>
+    </span>
+    </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--  <div class="team-member">
+          <div class="image-wrapper">
+              <img class="img-fluid" src="images/team-2.png" alt="alternative">
+          </div> <!-- end of image wrapper -->
+    <!-- <p class="p-large">Veronique Smith</p>
+     <p class="job-title">Business Developer</p>
+     <span class="social-icons">
+         <span class="fa-stack">
+             <a href="#your-link">
+                 <span class="hexagon"></span>
+                 <i class="fab fa-facebook-f fa-stack-1x"></i>
+             </a>
+         </span>
+         <span class="fa-stack">
+             <a href="#your-link">
+                 <span class="hexagon"></span>
+                 <i class="fab fa-twitter fa-stack-1x"></i>
+             </a>
+         </span>
+     </span>
+     </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--  <div class="team-member">
+          <div class="image-wrapper">
+              <img class="img-fluid" src="images/team-3.png" alt="alternative">
+          </div> <!-- end of image wrapper -->
+    <!--  <p class="p-large">Chris Zimerman</p>
+      <p class="job-title">Online Marketer</p>
+      <span class="social-icons">
+          <span class="fa-stack">
+              <a href="#your-link">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+          </span>
+          <span class="fa-stack">
+              <a href="#your-link">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+          </span>
+      </span>
+      </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--<div class="team-member">
+        <div class="image-wrapper">
+            <img class="img-fluid" src="images/team-4.png" alt="alternative">
+        </div> <!-- end of image wrapper -->
+    <!--<p class="p-large">Mary Villalonga</p>
+    <p class="job-title">Community Manager</p>
+    <span class="social-icons">
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+        </span>
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </span>
+    </span>
+    </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- </div> <!-- end of col -->
+    <!--   </div> <!-- end of row -->
+    <!-- </div> <!-- end of container -->
+    <!-- </div> <!-- end of basic-2 -->
+    <!-- end of team -->
+    <!-- About -->
+    <div id="about" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container">
+                        <h2>Team ecomotive 07</h2>
+                        <p>
+                            Being Chief Design is the biggest, most challenging and most rewarding design experience iencountered yet. Working with an interdiscplinary team of over 30 students poses a lot of challenges.
+                            It was a pleasure to be involved in an extracurriculair program, in which many students were motivated to create the sustainable car of the future.
+                            The student team consisted of team mechanical, team electrical and software, team external relations and team design. Interdiscplinary communication can be challenging, but working closely together it is vital to archieve innovation.
+                        </p>
+
+
+
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+        <div>
+
+            <a style="background-color: #ffffff;
+                box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+                transition: all 1s ease;
+                bottom: 2em;
+                right: 2em;
+                color: #222;
+                font: normal normal normal 14px/1 FontAwesome;
+               font-size: 26px;
+               font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 300;
+
+                position: fixed;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                text-align: center;
+                border-radius: 100%;"
+               href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+    <!-- Back top -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
