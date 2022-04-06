@@ -1,0 +1,598 @@
+
+    <div id="services" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>Features</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/steering wheel.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Improved User Interface</h3>
+                         <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Police onboard computer integrated with navigation</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Sliding steering wheel becomes a work station</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Driver does not need to look down to use controls</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">No need to drive back to the policestation for rapporting.</div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/popo2.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Interior functionalities</h3>
+                            <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Extended wheelbase</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Protective boundry between front and back row</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Compartment below seats to store bullet resistant vest</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Protective boundry between front and back row</div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end of card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/popo.png" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Cost effective crimefighting</h3>
+                            <!--   <p>(...)</p>  -->
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Increased rideheight</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">higher viewpoint</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Increased visability</div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+    <!-- Services -->
+    <!-- Details 1 -->
+    <div id="details" class="accordion">
+        <div class="area-1">
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+
+            <!-- Accordion -->
+            <div class="accordion-container" id="accordionOne">
+                <h2>Design Method</h2>
+        
+                <p>Firstly an interview was conducted with the police department of Bolswaart. Then a value proposition canvas was created, along with an UI positioning exploration and a UI flow chart. After iterating to archieve optimal functionality, the seating, dashboard and interface were designed. The exterior was the last step and was not the main focus of this project. Then all components were 3D modelled and evaluated by the target group.</p>
+
+            </div> <!-- end of accordion-container -->
+            <!-- end of accordion -->
+
+        </div> <!-- end of area-2 -->
+    </div> <!-- end of accordion -->
+    <!-- end of details 1 -->
+    <!-- Details 2 -->
+    <div class="tabs">
+        <div class="area-1">
+            <div class="tabs-container">
+
+
+                <!-- end of tabs links -->
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1" style="background-color:unset;">
+                        <h2>Design tools</h2>
+                        <p>Based on the design ideation, different prototyping methods are used, such as sketches, 3D models, exploratory making, and paper prototypes. These methods were used to tackle the issues the target group is facing. The ideas were iterated until a satisfactory concept emerged. The concept was evaluated with the design requirements and feedback from tutors. In order to get started the project, a research phase is done (both secondary and primary) and following that, a triple diamond design process is followed. During this process, multiple interviews with Bolsward police officers and done to get further insights and feedback on the project.  </p>
+
+                        <!-- Progress Bars -->
+                        <!--<div class="progress-container">
+                            <div class="title">Business Development 100%</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Opportunity Spotting 76%</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Online Marketing 90%</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
+
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2" style="background: url('../images/HeroshotJANE.jpg') center center no-repeat; ">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
+                        <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Ask for a quote and start improving your business</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2" ></div> <!-- end of area-2 -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
+
+    <!-- Call Me -->
+    <!-- Projects -->
+    <div id="projects" class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2>THEMIS gallery</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Research</span></div><img src="images/e5d60e35-758e-4826-830e-ef0410463b51.png" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Steering wheel/ computer</span></div><img src="images/stuurkleinmooi.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Project video</span></div><img src="images/explodedthemissquare.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Final render</span></div><img src="images/popo.jpg" alt="alternative"></a>
+                        </div>
+                
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of projects -->
+    <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/research.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h>Research</h>
+                <hr class="line-heading">
+                <p>Firstly an interview was conducted with the police department of Bolswaart. Then a value proposition canvas was created, along with an UI positioning exploration and a UI flow chart. After iterating to archieve optimal functionality, the seating, dashboard and interface were designed. The exterior was the last step and was not the main focus of this project. Then all components were 3D modelled and evaluated by the target group.</p>
+            </div>
+        </div> <!-- end of col -->
+        <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+
+    </div> <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/4aad0480-d1bc-46c4-be25-2aeb9352c0cd.jfif" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Steering wheel/ computer</h3>
+                <hr class="line-heading">
+                <p>A rectangular screen would be optimal for administrative work, since text editors and databases consist of horizontal elements. For the driving UI a circle is displayed in this square surface, to  counterrotate the UI facing upwards when steering. To optimise both layouts a square screen was the best option. The rim remains round to enable police steering techniques, which involves sliding around the rim. To improve awareness of the hand position, multiple surfaces divide the steering wheels outer rim for tactile feedback.</p>
+            </div>
+        </div>
+           <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+         <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <iframe class="img-fluid" style="max-width: 100%; height: auto;" src="https://www.youtube.com/embed/jFgpnOMXcqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Project video</h3>
+                <hr class="line-heading">
+                <p></p>
+            </div>
+        </div> <!-- end of col -->
+        <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+
+    </div> <!-- end of row -->
+    <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/popo.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Final Render</h3>
+                <hr class="line-heading">
+                <p></p>
+                </div>
+                 <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+     <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Joy Moments</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Spark Events</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Casual Wear</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Zazoo Apps</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div>
+
+    <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of project lightboxes -->
+    <!-- Team -->
+    <!-- <div class="basic-2">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-12">
+                     <h2>Our Team Of Consultants</h2>
+                     <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                 </div> <!-- end of col -->
+    <!--  </div> <!-- end of row -->
+    <!--   <div class="row">
+           <div class="col-lg-12">
+
+               <!-- Team Member -->
+    <!-- <div class="team-member">
+         <div class="image-wrapper">
+             <img class="img-fluid" src="images/team-1.png" alt="alternative">
+         </div> <!-- end of image-wrapper -->
+    <!--<p class="p-large">John Whitelong</p>
+    <p class="job-title">General Manager</p>
+    <span class="social-icons">
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+        </span>
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </span>
+    </span>
+    </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--  <div class="team-member">
+          <div class="image-wrapper">
+              <img class="img-fluid" src="images/team-2.png" alt="alternative">
+          </div> <!-- end of image wrapper -->
+    <!-- <p class="p-large">Veronique Smith</p>
+     <p class="job-title">Business Developer</p>
+     <span class="social-icons">
+         <span class="fa-stack">
+             <a href="#your-link">
+                 <span class="hexagon"></span>
+                 <i class="fab fa-facebook-f fa-stack-1x"></i>
+             </a>
+         </span>
+         <span class="fa-stack">
+             <a href="#your-link">
+                 <span class="hexagon"></span>
+                 <i class="fab fa-twitter fa-stack-1x"></i>
+             </a>
+         </span>
+     </span>
+     </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--  <div class="team-member">
+          <div class="image-wrapper">
+              <img class="img-fluid" src="images/team-3.png" alt="alternative">
+          </div> <!-- end of image wrapper -->
+    <!--  <p class="p-large">Chris Zimerman</p>
+      <p class="job-title">Online Marketer</p>
+      <span class="social-icons">
+          <span class="fa-stack">
+              <a href="#your-link">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+          </span>
+          <span class="fa-stack">
+              <a href="#your-link">
+                  <span class="hexagon"></span>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+          </span>
+      </span>
+      </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- Team Member -->
+    <!--<div class="team-member">
+        <div class="image-wrapper">
+            <img class="img-fluid" src="images/team-4.png" alt="alternative">
+        </div> <!-- end of image wrapper -->
+    <!--<p class="p-large">Mary Villalonga</p>
+    <p class="job-title">Community Manager</p>
+    <span class="social-icons">
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+        </span>
+        <span class="fa-stack">
+            <a href="#your-link">
+                <span class="hexagon"></span>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </span>
+    </span>
+    </div> <!-- end of team-member -->
+    <!-- end of team member -->
+    <!-- </div> <!-- end of col -->
+    <!--   </div> <!-- end of row -->
+    <!-- </div> <!-- end of container -->
+    <!-- </div> <!-- end of basic-2 -->
+    <!-- end of team -->
+    <!-- About -->
+    <div id="about" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/popotop.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7 col-xl-6">
+                    <div class="text-container">
+                         <h2>aknowledgements</h2>
+                         <p>Special thanks to Stijn Ossevoort and the Bolsward police department for their contribution and inspiration</p>
+          
+
+
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+
+        <div>
+
+            <a style="background-color: #ffffff;
+                box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+                transition: all 1s ease;
+                bottom: 2em;
+                right: 2em;
+                color: #222;
+                font: normal normal normal 14px/1 FontAwesome;
+               font-size: 26px;
+               font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 300;
+               
+                position: fixed;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                text-align: center;
+                border-radius: 100%;"
+                href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+    <!-- Back top -->
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
