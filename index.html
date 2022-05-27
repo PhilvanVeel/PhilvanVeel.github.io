@@ -1,56 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Philip van Veelen">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Philip van Veelen Portfolio</title>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		  crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Sarpanch:wght@800;900&display=swap" rel="stylesheet">
+    
 
+    
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&family=Questrial&family=Sarpanch:wght@800;900&display=swap" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<title>Philip van Veelen | Home</title>
+    <style>
 
-	<style>
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: white;
-		}
-
-		li {
-			float: left;
-		}
-
-			li a {
-				display: block;
-				color: rgb(230, 230, 230);
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-			}
-
-				li a:hover:not(.active) {
-					background-color: lightgrey;
-				}
-
-        .active {
-            background-color: rgba(211, 211, 211, 0.274);
-        }
-
-	.dropdown {
+.dropdown {
 		position: relative;
 		display: inline;
 		display: block;
@@ -68,225 +36,393 @@
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		padding: 12px 16px;
 		z-index: 1;
-	}
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-	.carousel-item {
-		height: 100vh;
-		color: white;
-		background: #7777;
-	}
+  }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-	.container {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding-bottom: 6.6%;
-		padding-right: 40%;
-	}
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body style=" overflow-x: hidden; background-image: linear-gradient(to right, #ffffff, #ffffff);"
+  >
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top ">
+    <div class="container-fluid">
+      <img src="images/logo pvvhandtekening.png" style="height:40px;" alt="">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center" style="  justify-content:center;  background-position:center;
+         ;  height: 100%; background-image:url(images/backgroundphil2.png); background-size: cover;">
+         <img src="images/logo pvvwhite.png" alt="" style="height:33%"> 
+      </div>
+        
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Philip van Veelen</h1>
+            <p>Automotive &amp; Industrial Designer <br>
+            (page currently under construction )</p>
+            <p><a class="btn btn-lg btn-primary" href="#">About</a></p>
+          </div>
+        </div>
+      </div>
 
 
-	.overlay-image {
-		bottom: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		position: absolute;
-		background-position: center;
-		background-size: cover;
-		opacity: 1;
-	}
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center" style="    height: 100%; background-image:url(images/TUE.png); background-size: cover;">
+          <img src="images/sideeco.png" alt="">
+      </div>
+      
 
-	.container h1 {
-		font-family: 'Lexend Exa', sans-serif;
-		color: white;
-	}
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>TU/ECOMOTIVE</h1>
+          <p>A CO2 neutral car by an innovative student team</p>
+          <p><a class="btn btn-lg btn-primary" href="#">View project</a></p>
+        </div>
+      </div>
+    </div>
 
-	.container p {
-		color: white;
-		font-family: 'Questrial', sans-serif;
-	}
-</style>
-</head>
-<body style="height:max-content; background-color: rgb(0, 0, 0); ">
-
-
-
-
-
-
-	<!--<img src="philiplogo.png" alt="logo Philip van Veelen" style="height: 30px; float: left; object-fit: contain">
-			<p style=" margin-left: 50px;" color: #4F4F51;> Philip van Veelen	</p>
-
-			<a href="https://www.instagram.com/philvanveel" target="_blank">
-				<img alt="Qries" src="https://i.imgur.com/vG3e4U7.png"
-					 width=30 height=30>
-			</a>
-
-			<a href="https://nl.linkedin.com/in/philipvanveelen1994" target="_blank">
-				<img alt="Qries" src="https://i.imgur.com/ymyZdt1.png"
-					 width=30 height=30>
-			</a>-->
-
-	<div style="    position: absolute;
-    z-index: 200;">
-		<ul style="margin: 0; display: inline-block; vertical-align: top;     background-color: transparent;">
-			<li><a class="active" href="#home">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-			<div class="dropdown" style=" display: inline-block; vertical-align: top; color:black;">
-				<a style=" color: rgb(255, 255, 255);" href="#about">Projects</a>
-				<div class="dropdown-content">
-					<a style="display: block; text-align: left; color: rgb(255, 255, 255); " href="ecomotive.html">TU/Ecomotive</a><br>
-					<a style="display: block; text-align: left; color: rgb(255, 255, 255); " href="themis.html">Themis</a><br>
-					<a style="display: block; text-align: left; color: white; " href="VRresearch.html">VR automotive research</a><br>
-					<a style="display: block; text-align: left; color: white; " href="Dolce.html">Dolce</a><br>
-					<a style="display: block; text-align: left; color: white; " href="Cyclecar.html">Cyclecar</a><br>
-					<a style="display: block; text-align: left; color: white; " href="Gallery.html">Gallery</a><br>
-	
-	
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center" style="    height: 100%; background-image:url(images/steering\ background.png); background-size: cover;">
+        <img src="images/steering wheel.png" alt="">
+    </div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>THEMIS</h1>
+            <p>Reinventing police vehicles with a user centred approach.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">View project</a></p>
+          </div>
+        </div>
+      </div>
 
 
-				</div>
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center" style="    height: 100%; background-image:url(images/tuerender.png); background-size: cover;">
+        <img src="images/vrscreenshot.png" alt="">
+    </div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>VR research</h1>
+            <p>VR application to test motion sickness for rear-facing passengers</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Link to paper</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  
+
+  
+  
+  <div class="container marketing">
+
+    <hr class="featurette-divider" >
+
+    <div class="row featurette"style="margin-bottom:50px;">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">About <span class="text-muted">Philip van Veelen</span></h2>
+        <p class="lead">I am an Industrial design master’s student, who is driven to work in the automotive industry as a designer. I have a broad range of experience in automotive design, product design, and furniture design. My experience and training in design sketching and 3D modeling allow me to iterate rapidly. My knowledge of storytelling, product manufacturing, user experience, and ergonomics results in an efficient design process and a concept proposal based on the user and stakeholder's requirements.</p>
+        
+        
+        <!-- Button trigger modal -->
+        
+        
+        <div class="container mt-3" style="padding: 0px;">          
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="margin-left: 0px; margin-bottom: 10px;">
+          View Resume          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Resume</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <img src="images/Philip van Veelen Resume.png" style="width: 100%" >
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="container mt-3" style="padding: 0px;">          
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2" style="margin-left: 0px; margin-bottom: 10px;">
+           Contact          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal2">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Contact</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+               <p> Linkedin, Insta, Behance, Github, philipvanveelen@live.nl </p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        
+        
+
+
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" src="images/phil.png" role="img" aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false" >
+
+      </div>
+    </div>
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="images/The-Hague-University.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
+
+        <h2 class="fw-normal">Strong foundation&nbsp;</h2>
+        <p>During my bachelor's in Industrial Product Design I developed a strong foundation in ideation, problem solving and technical feasability.
+        </p>
+     <!--   <p><a class="btn btn-secondary" href="#">View resume &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img src="images/tue (1).png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
+
+        <h2 class="fw-normal">Current education</h2>
+        <p>Currently, duringmy Master's of science in Intustrial Design at the Technological University of EIndhoven, I build upon my skills with User experience, Human centred and sustainable design.<br>
+        &nbsp;</p>
+     <!--   <p><a class="btn btn-secondary" href="#">View resume &raquo;</a></p>-->
+    </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3">
+        <img src="images/carsketch.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
+
+        <h2 class="fw-normal">Passion for Mobility</h2>
+        <p>Every day I take action to persue a carreer in the automotive/ transportation industry, since it is a fascinating, rapidly evolving and competative industry with like-minded people who share my passion.</p>
+     <!--   <p><a class="btn btn-secondary" href="#">View resume &raquo;</a></p>-->
+    </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-3">
+        <img src="images/teamdesign1.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
+
+        <h2 class="fw-normal">Extracuricular activities</h2>
+        <p>During my study, I am Chief Design for automotive student team TU/Ecomotive, tutor assistant in Design Sketching, and a part-time freelance designer.</p>
+     <!--   <p><a class="btn btn-secondary" href="#">View resume &raquo;</a></p>-->
+    </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+</div>
+    <!-- START THE FEATURETTES -->
+<div >
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7" style="padding-left: 10%;">
+        <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">TU/ECOMOTIVE <span class="text-muted">CHIEF DESIGN</span></h2>
+        <p class="lead">Chief automotive designer responsible for the exterior and interior design of a sustainable electric car developed by the TU/Ecomotive student team, achieving CO2 neutrality. Developed the packaging, exterior, and interior design leading a team of 3 design students from concept to production in one year.
+          <br><br>
+          As chief design I was responsible for managing the design team, creating concept sketches, 3D concept models and end responsible for the quality of the interior and exterior of the car. The design of the car is just the the physical manifestation of the challenges, successes, setbacks and growth we went through. What I am even more proud of is the positive, rewarding and creative team we have formed together.
+        </p>
+		          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="images/klaar.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2"style="padding-right: 10%;">
+        <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">VR Design Research</h2>
+        <p class="lead">
+          Several automotive manufacturers have developed concept cars with face-to-face layouts, such as the Renault Symbioz, Mini Urbanaut, Volkswagen Sedric, and the Volvo 360 concept. To fully benefit from driving in an AV, research indicates that it would be optimal to have an alternative seat layout, compared to the regular rows pointing in the same direction. This futuristic seat configuration is an old idea, since the early automobiles that were developed when horse carriages were the main transportation method, featured a similar layout
+          <br>
+          <br>
+          Vibrotactile displays are actuators that communicate information by causing a sense of vibration through the perception of touch. When used solely, it functions as a non-distracting, discrete and immediate form of communication. The vibrations can provide occupants with information such as the location of surrounding objects, and the position of the vehicle on the road.</p>
+		          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+
+      </div>
 		
-			
-			</div>
-	</div>	
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/seatverslag.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7" style="padding-left: 10%;">
+        <h2 class="featurette-heading fw-normal lh-1">Themis (pre-master project)</h2>
+        <p class="lead">Currently, police cars used by the Dutch police force are modified civilian cars made suitable for patrolling the region and quickly responding to calls, but this compromises the usability and effectives when compared to a vehicle designed for this task from the ground up.</p>
+		          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/themis.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2"style="padding-right: 10%;">
+        <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">Design Sketch Gallery</h2>
+        <p class="lead"> This section I would like to dedicate to my favorite activity: Design Sketching. It is a tool that enables designers to come into a state of flow: It is not the brain guiding the hand, but the hand guiding the brain. When time, urgency and constraints melt away, that is when there is room for innovation and creativity.&nbsp;</p>
+        <p class="lead">Also I would like to dedicate this section to the two designers that helped me get where I am today: Martijn van der Wiel and Luciano Bove. Their classes, feedback, guidance and kindness has taught me about design, professionality and enjoying your work.&nbsp; &nbsp; &nbsp; &nbsp;<br>
+          </p>
+<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+
+      </div>
 		
-	
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/dolce2.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+</div>
 
 
-
-	<div id="myCarousel" class="carousel slide" data-interval="false" style="    position: relative;
-    position: fixed;
-    top: 0;
-    width: 100%;
-	height: 100%; 
-    z-index: 0;">
-		<ol class="carousel-indicators">
-			<li data-target="#=myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#=myCarousel" data-slide-to="1"></li>
-			<li data-target="#=myCarousel" data-slide-to="2"></li>
-			<li data-target="#=myCarousel" data-slide-to="3"></li>
-			<li data-target="#=myCarousel" data-slide-to="4"></li>
-			<li data-target="#=myCarousel" data-slide-to="5"></li>
-			
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; Philip van Veelen &middot; </p>
+  </footer>
+</main>
 
 
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
-			
-			
-			
-			
-
-		</ol>
-		<div class="carousel-inner">
-
-
-			<div class="carousel-item active">
-
-				<div class="overlay-image"
-					 style="background-image: url(images/wheyoo.png);">
-				</div>
-				<div class="container">
-					<h1> PHILIP VAN VEELEN</h1>
-					<p>
-					  My name is Philip van Veelen and I am an Industrial Desiger with a passion for automotive design&nbsp; from the Netherlands. Welcome to my Portfolio website.
-					  Currently I am studying for my master's degree at the Technical University of Eindhoven.</p>
-					<a href="about.html" class="btn btn-outline-light">
-						About +
-					</a>
-				</div>
-
-			</div>
-			<div class="carousel-item">
-				<div class="overlay-image"
-					 style="background-image: url(images/ecorender.jpg);">
-				</div>
-				<div class="container">
-					<h1> TU/ECOMOTIVE</h1>
-					<p class="text-left">TU/Ecomotive is an automotive student team, focussing on sustainable car manufacturing. The car we are currently developing ( to be announced soon!) will be made using reusable 3d printed reinforced plastics with many innovative techniques implemented.</p>
-					<a href="ecomotive.html" class="btn btn-outline-light">
-						View project +
-					</a>
-				</div>
-
-			</div>
-			<div class="carousel-item">
-				<div class="overlay-image"
-					 style="background-image: url(images/steering\ wheel.jpg); ">
-				</div>
-				<div class="container">
-					<h1> THEMIS</h1>
-					<p>Themis is a police concept vehicle. Police officers their current vehicles hinder them on the job on a daily basis. After interviewing police officers, a new, exciting concept emerged.</p>
-					<a href="themis.html" class="btn btn-outline-light">
-						View project +
-					</a>
-				</div>
-
-			</div>
-			<div class="carousel-item">
-				<div class="overlay-image"
-					 style="background-image: url(images/VRresearch.png); ">
-				</div>
-				<div class="container">
-					<h1> VR automotive research</h1>
-					<p>Vibrotactile feedforward displays to reduce motion sickness for rear-facing passengers using VR and lofi prototyping&nbsp;</p>
-					<a href="VRresearch.html" class="btn btn-outline-light">
-						View project +
-					</a>
-			  </div>
-
-			</div>
-
-			<div class="carousel-item">
-				<div class="overlay-image"
-					 style="background-image: url(images/testDolce.png); ">
-				</div>
-				<div class="container">
-					<h1> DOLCE</h1>
-					<p>Dolce is a concept vehicle I developed during Luciano Bove's online classes to improve my automotie design skills. The brief was to create a small urban vehicle with a highly futuristic appearance. I gave it a strong character and applied my personal style. My focus was to find the balance between dynamic styling and tranquility.&nbsp; &nbsp;&nbsp;</p>
-					<a href="Dolce.html" class="btn btn-outline-light">
-					Comming soon!
-				</a>
-				</div>
-
-			</div>
-
-		
-			<div class="carousel-item">
-				<div class="overlay-image"
-					 style="background-image: url(gallery/renault2.png); ">
-				</div>
-				<div class="container">
-					<h1> SKETCH GALLERY</h1>
-					<p>This section is a display of my favorite activity; design sketching. I have included digital and analogue works. </p>
-					<a href="Gallery.html" class="btn btn-outline-light">
-						View project +
-					</a>
-				</div>
-
-			</div>
-		</div>
-
-
-		<a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev" style=width:6%;":>
-			<span class="sr-only ">Previous</span>
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		</a>
-		<a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next" style=width:6%;":>
-			<span class="sr-only ">Next</span>
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		</a>
-	</div>
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+      
+  </body>
 </html>
