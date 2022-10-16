@@ -79,7 +79,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion:no-preference) {
@@ -1253,7 +1253,7 @@ progress {
 
     .col-md-7 {
         flex: 0 0 auto;
-        width: 58.33333333%
+        width: 50%;
     }
 
     .col-md-8 {
@@ -7773,7 +7773,8 @@ fieldset:disabled .btn {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030
+    z-index: 1030;
+    background-color: #;
 }
 
 .fixed-bottom {
