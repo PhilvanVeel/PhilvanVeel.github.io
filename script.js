@@ -14,13 +14,13 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-document.addEventListener('wheel',function (event){
-  //only vertical scroll
-  if (event.deltaY > 0)
-  {
-    event.preventDefault();
-    smoothScroll(document.documentElement,100,1000)
-  }
+// document.addEventListener('wheel',function (event){
+//   //only vertical scroll
+//   if (event.deltaY > 0)
+//   {
+//     event.preventDefault();
+//     smoothScroll(document.documentElement,100,1000)
+//   }
 })
 function smoothScroll (domElement,pixel,delay)
 {
