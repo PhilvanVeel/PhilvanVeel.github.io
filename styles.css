@@ -10,7 +10,10 @@ html {
   font-family:'Courier New', Courier, monospace;
 }
 
-
+.popbox{
+  margin: 50px;
+  margin-bottom: 100px;
+}
 
 body {
   margin: 20px;
