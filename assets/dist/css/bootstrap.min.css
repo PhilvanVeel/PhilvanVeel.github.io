@@ -6620,7 +6620,8 @@ fieldset:disabled .btn {
 
 .carousel-inner {
     position: relative;
-    width: 100%;
+    width: auto;
+    height: 100%;
     overflow: hidden
 }
 
@@ -8032,7 +8033,7 @@ fieldset:disabled .btn {
 }
 
 .d-flex {
-    display: flex !important
+    display: flex !important;
 }
 
 .d-inline-flex {

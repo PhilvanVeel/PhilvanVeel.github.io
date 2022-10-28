@@ -101,7 +101,7 @@
   <link href="carousel.css" rel="stylesheet">
 </head>
 
-<body style=" overflow-x: hidden; background-image: linear-gradient(to right, #ffffff, #ffffff);">
+<body style=" padding-top:0 ; overflow-x: hidden; background-image: linear-gradient(to right, #ffffff, #ffffff);">
 
   <!-- <header>
     <nav class="navbar navbar-expand-md navbar-light fixed-top ">
@@ -130,7 +130,7 @@
     </nav>
   </header> -->
 
-  <main>
+  <main style="    width: -webkit-fill-available;">
 
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-indicators">
@@ -142,7 +142,7 @@
 
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="height: 67vh;">
           <div class="d-flex justify-content-center" style="  justify-content:center;  background-position:center;
          ;  height: 100%; background-image:url(images/backgroundphil2.png); background-size: cover;">
             <img src="images/logo pvvwhite.png" alt="" style="height:33%">
@@ -160,7 +160,7 @@
         </div>
 
 
-        <div class="carousel-item">
+        <div class="carousel-item"  style="height: 67vh;">
           <div class="d-flex justify-content-center"
             style="    height: 100%; background-image:url(images/TUE.png); background-size: cover;">
             <img src="images/transparentbackground.png" alt="">
@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item" style="height: 67vh;">
           <div class="d-flex justify-content-center"
             style="    height: 100%; background-image:url(images/steering\ background.png); background-size: cover;">
             <img src="images/steering wheel.png" alt="">
@@ -191,7 +191,7 @@
         </div>
 
 
-        <div class="carousel-item">
+        <div class="carousel-item" style="height: 67vh;">
           <div class="d-flex justify-content-center"
             style="    height: 100%; background-image:url(images/tuerender.png); background-size: cover;">
             <img src="images/vrscreenshot.png" alt="">
@@ -200,7 +200,7 @@
             <div class="carousel-caption text-start">
               <h1>VR research</h1>
               <p>VR application to test motion sickness for rear-facing passengers</p>
-              <p><a class="btn btn-lg btn-primary" href="#vr">Link to paper</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#vr">View project</a></p>
             </div>
           </div>
         </div>
@@ -216,116 +216,119 @@
     </div>
 
 
+
+
+
     <!-- Marketing messaging and featurettes
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
 
 
+    <hr class="featurette-divider">
+
+    <div class="row featurette" style="background-color: rgb(216, 216, 216);">
+      <div class="col-md-5" style="padding-left: 10%;">
 
 
-    <div class="container marketing">
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette" style="margin-bottom:50px; ">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1" style="    margin-top: 0px;">About <span
-              class="text-muted">Philip van Veelen</span></h2>
-          <p class="lead">I am an Industrial design master’s student, who is driven to work in the automotive industry
-            as a designer. I have a broad range of experience in automotive design, product design, and furniture
-            design. My experience and training in design sketching and 3D modeling allow me to iterate rapidly. My
-            knowledge of storytelling, product manufacturing, user experience, and ergonomics results in an efficient
-            design process and a concept proposal based on the user and stakeholder's requirements.</p>
+        <h2 class="featurette-heading fw-normal lh-1" style="    margin-top: 0px;">About <span class="text-muted">Philip
+            van Veelen</span></h2>
+        <p class="lead">I am an Industrial design master’s student, who is driven to work in the automotive industry
+          as a designer. I have a broad range of experience in automotive design, product design, and furniture
+          design. My experience and training in design sketching and 3D modeling allow me to iterate rapidly. My
+          knowledge of storytelling, product manufacturing, user experience, and ergonomics results in an efficient
+          design process and a concept proposal based on the user and stakeholder's requirements.</p>
 
 
-          <!-- Button trigger modal -->
+        <!-- Button trigger modal -->
 
 
-          <div class="container mt-3" style="padding: 0px;">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"
-              style="margin-left: 0px; margin-bottom: 10px;">
-              View Resume </button>
-          </div>
-          <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
+        <div class="container mt-3" style="padding: 0px;">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"
+            style="margin-left: 0px; margin-bottom: 10px;">
+            View Resume </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Resume</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <img src="images/Philip van Veelen Resume.png" style="width: 100%">
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Resume</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <img src="images/Philip van Veelen Resume.png" style="width: 100%">
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+
             </div>
           </div>
+        </div>
 
-          <div class="container mt-3" style="padding: 0px;">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2"
-              style="margin-left: 0px; margin-bottom: 10px;">
-              Contact </button>
-          </div>
-          <!-- The Modal -->
-          <div class="modal" id="myModal2">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
+        <div class="container mt-3" style="padding: 0px;">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2"
+            style="margin-left: 0px; margin-bottom: 10px;">
+            Contact </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal2">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Contact</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <a href="https://www.instagram.com/philvanveel" target="_blank">
-                    <img alt="Qries" src="https://i.imgur.com/vG3e4U7.png" width=60 height=60>
-                  </a>
-                  <a href="https://nl.linkedin.com/in/philipvanveelen1994" target="_blank">
-                    <img alt="Qries" src="https://i.imgur.com/ymyZdt1.png" width=60 height=60>
-                  </a>
-                  <a href="mailto:philipvanveelen@live.nl" target="_blank">
-                    <img alt="Qries" src="images/email.png" width=60 height=60>
-                  </a>
-                  <!-- <p> Linkedin, Insta, Behance, Github, philipvanveelen@live.nl </p> -->
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Contact</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <a href="https://www.instagram.com/philvanveel" target="_blank">
+                  <img alt="Qries" src="https://i.imgur.com/vG3e4U7.png" width=60 height=60>
+                </a>
+                <a href="https://nl.linkedin.com/in/philipvanveelen1994" target="_blank">
+                  <img alt="Qries" src="https://i.imgur.com/ymyZdt1.png" width=60 height=60>
+                </a>
+                <a href="mailto:philipvanveelen@live.nl" target="_blank">
+                  <img alt="Qries" src="images/email.png" width=60 height=60>
+                </a>
+                <!-- <p> Linkedin, Insta, Behance, Github, philipvanveelen@live.nl </p> -->
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+
             </div>
           </div>
-
-
-
-
-
         </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
-            height="300" style="border-radius:100% ;" src="images/phil.png" role="img" aria-label="Placeholder: 300x300"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
 
-        </div>
+
+
+
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/phil.png" role="img" style="      float: right;  border-radius: 100%;" aria-label="Placeholder: 300x300"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+
       </div>
 
+    </div>
 
-      <!-- <div class="row">
+    </div>
+
+
+    <!-- <div class="row">
         <div class="col-lg-3">
           <img src="images/The-Hague-University.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre"
             style="background-color: black;">
@@ -366,6 +369,10 @@
 
     </div>
     <!-- START THE FEATURETTES -->
+
+
+
+    <!-- TUECO -->
     <div>
       <hr class="featurette-divider">
 
@@ -405,7 +412,7 @@
                   <!-- Modal body -->
                   <div style="height: 80vh; overflow-y: scroll;" class="modal-body">
                     <div>
-        
+
 
                       <div class="popbox">
                         <h2>What is TU/Ecomotive?</h2>
@@ -413,11 +420,12 @@
                         <p> Ecomotive is a student team at the University of Technology Eindhoven that innovates in
                           building cars with a low environmental footprint. Where other teams excel at efficiency in
                           driving, Ecomotive focusses on the build process, materials and lifecycle. Often car
-                          manufacturers use lightweight composites to increase efficiency, but these materials are toxic,
+                          manufacturers use lightweight composites to increase efficiency, but these materials are
+                          toxic,
                           and after the car’s lifecycle has ended, these materials cannot be recycled.
-  
+
                         </p>
-                
+
 
                       </div>
 
@@ -448,12 +456,12 @@
                         solutions, partnering up with innovative companies and consulting experts in the field. The car
                         is still currently under development.
                       </p>
-</div>
+                    </div>
 
                     <img src="images/eco sketches.jpg" style="width: 100%">
 
                     <div class="popbox">
-                      <h2>Design process</h2>                
+                      <h2>Design process</h2>
 
                       <p> As chief design I was responsible for managing the design team, creating concept sketches,
                         3D
@@ -486,7 +494,6 @@
               </div>
             </div>
         </div>
-
 
 
 
@@ -545,13 +552,14 @@
 
 
 
-
+        <!-- VR -->
 
         <hr class="featurette-divider">
 
         <div class="row featurette" style="margin-left:100px; margin-right: 100px;">
           <div class="col-md-7 order-md-2" style="padding-right: 10%;">
             <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">VR Design Research</h2>
+            <br>
             <p class="lead">
               Multiple automotive manufacturers have developed concept cars with face-to-face layouts, such as the
               Renault Symbioz, Mini Urbanaut, Volkswagen Sedric, and the Volvo 360 concept. To fully benefit from
@@ -567,37 +575,41 @@
               surrounding objects, and the position of the vehicle on the road.
             </p>
             <div class="container mt-3" style="padding: 0px;">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalvr"
-                  style="margin-left: 0px; margin-bottom: 10px;">
-                  + more info </button>
-              </div>
-              <!-- The Modal -->
-              <div class="modal" id="myModalvr">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-    
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">VR</h4>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-    
-                    <!-- Modal body -->
-                    <div class="modal-body">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalvr"
+                style="margin-left: 0px; margin-bottom: 10px;">
+                + more info </button>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModalvr">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
 
-                      <iframe width="100%" height="720" src="https://www.youtube.com/embed/H6rUF3Np8VY" title="haptic feedforward for rear facing passengers, a vr study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-                    </div>
-    
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-    
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">VR</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                    <iframe width="100%" height="720" src="https://www.youtube.com/embed/H6rUF3Np8VY"
+                      title="haptic feedforward for rear facing passengers, a vr study" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+
+                    <iframe src="/PaperphilipvanveelenM12v2.pdf" #view=Fit width="100%" height="720px">
+                    </iframe>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+
                 </div>
               </div>
+            </div>
           </div>
 
           <div class="col-md-5 order-md-1" id="vr">
@@ -613,54 +625,60 @@
 
 
 
-
+        <!-- themis -->
 
         <hr class="featurette-divider">
 
         <div class="row featurette" id="themis">
           <div class="col-md-7" style="padding-left: 10%;">
             <h2 class="featurette-heading fw-normal lh-1">Themis (pre-master project)</h2>
+            <br>
             <p class="lead">Currently, police cars used by the Dutch police force are modified civilian cars made
               suitable for patrolling the region and quickly responding to calls, but this compromises the usability and
               effectives when compared to a vehicle designed for this task from the ground up.</p>
-              <div class="container mt-3" style="padding: 0px;">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3"
-                  style="margin-left: 0px; margin-bottom: 10px;">
-                  + More info </button>
-              </div>
-              <!-- The Modal -->
-              <div class="modal" id="myModal3">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-    
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">Themis</h4>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-    
-                    <!-- Modal body -->
-                    <div class="modal-body">
+            <div class="container mt-3" style="padding: 0px;">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalthemis"
+                style="margin-left: 0px; margin-bottom: 10px;">
+                + More info </button>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModalthemis">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
 
-                      <img src="images/" style="width: 100%">
-
-
-                    </div>
-    
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-    
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Themis</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                    <img src="images/themis.png" style="width: 100%">
+                    <br>
+                    <img src="images/popo-Recovered-Recovered.png " style="width: 100%">
+                    <img src="images/steering wheel.jpg " style="width: 100%">
+
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+
                 </div>
               </div>
+            </div>
 
           </div>
           <div class="col-md-5">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/themis.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
-              focusable="false">
+              src="images/explodedthemis.jpg" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#eee" /></img>
 
@@ -670,10 +688,12 @@
         <hr class="featurette-divider">
 
 
+        <!-- sketch -->
 
-        <div class="row featurette">
+        <div class="row featurette" id="sketch" style="margin-left:100px; margin-right: 100px;"">
           <div class="col-md-7 order-md-2" style="padding-right: 10%;">
             <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">Design Sketch Gallery</h2>
+            <br>
             <p class="lead"> This section I would like to dedicate to my favorite activity: Design Sketching. It is a
               tool that enables designers to come into a state of flow: It is not the brain guiding the hand, but the
               hand guiding the brain. When time, urgency and constraints melt away, that is when there is room for
@@ -681,15 +701,50 @@
             <p class="lead">Also I would like to dedicate this section to the two designers that helped me get where I
               am today: Martijn van der Wiel and Luciano Bove. Their classes, feedback, guidance and kindness has taught
               me about design, professionality and enjoying your work.&nbsp; &nbsp; &nbsp; &nbsp;<br>
-            </p>
-            <p><a class="btn btn-primary" href="#">Comming soon! &raquo;</a></p>
+            <div class="container mt-3" style="padding: 0px;">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalsketch"
+                style="margin-left: 0px; margin-bottom: 10px;">
+                + More info </button>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModalsketch">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Sketches</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                    <img src="images/sketch.png" style="width: 100%">
+                    <br>
+                    <img src="images/Scan_20190512 (9).png " style="width: 100%">
+                    <img src="images/lemans speedyman2.jpg " style="width: 100%">
+                    <img src="images/WhatsApp Image 2022-09-26 at 00.03.07.png " style="width: 100%">
+
+
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
 
           </div>
 
-          <div class="col-md-5 order-md-1">
+          <div class="col-md-5 order-md-1" id="vr">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/dolce2.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
-              focusable="false">
+              src="images/7_Phillip-van-Veelen-Zem.png" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#eee" /></img>
 
@@ -700,11 +755,15 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette" id="themis">
+
+        <!-- Gravity sketch -->
+
+        <div class="row featurette" id="GS">
           <div class="col-md-7" style="padding-left: 10%;">
             <h2 class="featurette-heading fw-normal lh-1">Gravity sketch models</h2>
+            <br>
             <p class="lead">Comming soon!</p>
-              <!-- <div class="container mt-3" style="padding: 0px;">
+            <!-- <div class="container mt-3" style="padding: 0px;">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3"
                   style="margin-left: 0px; margin-bottom: 10px;">
                   + More info </button>
@@ -765,6 +824,7 @@
 
 
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 </body>
