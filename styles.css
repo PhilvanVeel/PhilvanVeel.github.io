@@ -123,7 +123,7 @@ model-viewer {
 model-viewer {
   background: transparent;
   height: 600px;
-  width: 55vw;
+  width: -webkit-fill-available;
   position: sticky;
   top: 0;
 }

@@ -21,7 +21,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 //     event.preventDefault();
 //     smoothScroll(document.documentElement,100,1000)
 //   }
-})
+
 function smoothScroll (domElement,pixel,delay)
 {
   const intervalToRepeat = 25;
