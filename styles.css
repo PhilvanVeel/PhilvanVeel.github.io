@@ -10,6 +10,21 @@ html {
   font-family:'Courier New', Courier, monospace;
 }
 
+
+.col-md-5{
+  scroll-snap-type: y mandatory;
+  
+}
+
+.row featurette{
+  scroll-snap-type: y mandatory;
+
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+}
+
 .popbox{
   margin: 50px;
   margin-bottom: 100px;
