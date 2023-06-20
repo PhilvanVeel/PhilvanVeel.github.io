@@ -1,215 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description">
-  <meta name="description" content="&lt;model-viewer&gt; template">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Philip van Veelen">
-  <meta name="generator" content="Hugo 0.98.0">
-  <title>Philip van Veelen Portfolio</title>
-  <link type="text/css" href="./styles.css" rel="stylesheet" />
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
- 
-  <style>
-    .dropdown {
-      position: relative;
-      display: inline;
-      display: block;
-      color: rgb(121, 164, 252);
-      text-align: center;
-      padding: 14px 16px;
-
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f938;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      padding: 12px 16px;
-      z-index: 1;
-
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-  </style>
-
-
-  <!-- Custom styles for this template -->
-  <link href="carousel.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Philip Van Veelen - Industrial Designer</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
-<body style=" padding-top:0 ; overflow-x: hidden; background-image: linear-gradient(to right, #ffffff, #ffffff);">
-
-  <!-- <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top ">
-      <div class="container-fluid">
-        <img src="images/logo pvvhandtekening.png" style="height:40px;" alt="">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </header> -->
-
-  <main style="    width: -webkit-fill-available;">
-
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="height: 67vh;">
-          <div class="d-flex justify-content-center" style="  justify-content:center;  background-position:center;
-         ;  height: 100%; background-image:url(images/backgroundphil2.png); background-size: cover;">
-            <img src="images/logo pvvwhite.png" alt="" style="height:33%">
-          </div>
-
-
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Philip van Veelen</h1>
-              <p>Automotive &amp; Industrial Designer <br>
-                (page currently under construction )</p>
-              <p><a class="btn btn-lg btn-primary" href="#">About</a></p>
+<body>
+    <!-- Add a sticky navbar -->
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Philip Van Veelen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
+    </nav> -->
 
+    <!-- Add a welcome banner with a video background and placeholder text -->
+    <section id="banner">
 
-        <div class="carousel-item"  style="height: 67vh;">
-          <div class="d-flex justify-content-center"
-            style="    height: 100%; background-image:url(images/TUE.png); background-size: cover;">
-            <img src="images/transparentbackground.png" alt="">
-          </div>
+        <div id="video-background">
+            <video autoplay loop muted>
+                <source src="images\video.mp4" type="video/mp4">
+            </video>
 
+            <img src="images\logo pvvwhite.png">
+            <h2>Philip van Veelen</h2>
+            <h3> Industrial Design Portfolio</h3>
 
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>TU/ECOMOTIVE</h1>
-              <p>A CO2 neutral car by an innovative student team</p>
-              <p><a class="btn btn-lg btn-primary" href="#tueco">View project</a></p>
-            </div>
-          </div>
         </div>
-
-        <div class="carousel-item" style="height: 67vh;">
-          <div class="d-flex justify-content-center"
-            style="    height: 100%; background-image:url(images/steering\ background.png); background-size: cover;">
-            <img src="images/steering wheel.png" alt="">
-          </div>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>THEMIS</h1>
-              <p>Reinventing police vehicles with a user centred approach.</p>
-              <p><a class="btn btn-lg btn-primary" href="#themis">View project</a></p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item" style="height: 67vh;">
-          <div class="d-flex justify-content-center"
-            style="    height: 100%; background-image:url(images/tuerender.png); background-size: cover;">
-            <img src="images/vrscreenshot.png" alt="">
-          </div>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>VR research</h1>
-              <p>VR application to test motion sickness for rear-facing passengers</p>
-              <p><a class="btn btn-lg btn-primary" href="#vr">View project</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
+    </section>
 
 
 
@@ -222,657 +66,533 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette" style="background-color: rgb(216, 216, 216);">
-      <div class="col-md-5" style="padding-left: 10%;">
+    <div class="row featurette" style="background-color: rgb(57, 57, 57) ; justify-content: center;">
+        <div class="col-md-6" \>
 
 
 
-        <h2 class="featurette-heading fw-normal lh-1" style="    margin-top: 0px;">About <span class="text-muted">Philip
-            van Veelen</span></h2>
-        <p class="lead">I am an Industrial design master’s student, who is driven to work in the automotive industry
-          as a designer. I have a broad range of experience in automotive design, product design, and furniture
-          design. My experience and training in design sketching and 3D modeling allow me to iterate rapidly. My
-          knowledge of storytelling, product manufacturing, user experience, and ergonomics results in an efficient
-          design process and a concept proposal based on the user and stakeholder's requirements.</p>
+            <h2 class="featurette-heading fw-normal lh-1 text-white">About Philip van Veelen</span></h2>
+            <p class="lead">I am an Industrial design master’s student, who is driven to work in the automotive industry
+                as a designer. I have a broad range of experience in automotive design, product design, and furniture
+                design. My experience and training in design sketching and 3D modeling allow me to iterate rapidly. My
+                knowledge of storytelling, product manufacturing, user experience, and ergonomics results in an
+                efficient
+                design process and a concept proposal based on the user and stakeholder's requirements.</p>
 
 
-        <!-- Button trigger modal -->
 
 
-        <div class="container mt-3" style="padding: 0px;">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"
-            style="margin-left: 0px; margin-bottom: 10px;">
-            View Resume </button>
         </div>
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
+        <div class="col-md-2" style="display: grid;     height: -webkit-fill-available;">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                src="images/zemsketch (1).png" role="img" style="     width: -webkit-fill-available;  float: right;  border-radius: 100%; 
+              
+    
+                " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
 
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Resume</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <img src="images/Philip van Veelen Resume.png" style="width: 100%">
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-
-            </div>
-          </div>
         </div>
-
-
-
-
-
-        
-        <div class="container mt-3" style="padding: 0px;">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalinsta"
-            style="margin-left: 0px; margin-bottom: 10px;">
-            Instagram gallery </button>
-        </div>
-        <!-- The Modal -->
-        <div class="modal" id="myModalinsta">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Instagram</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <iframe src='https://www.juicer.io/api/feeds/philvanveel/iframe' frameborder='0' width='1000' height='1000' style='display:block;margin:0 auto;'></iframe>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="container mt-3" style="padding: 0px;">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2"
-            style="margin-left: 0px; margin-bottom: 10px;">
-            Contact </button>
-        </div>
-        <!-- The Modal -->
-        <div class="modal" id="myModal2">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Contact</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <a href="https://www.instagram.com/philvanveel" target="_blank">
-                  <img alt="Qries" src="https://i.imgur.com/vG3e4U7.png" width=60 height=60>
-                </a>
-                <a href="https://nl.linkedin.com/in/philipvanveelen1994" target="_blank">
-                  <img alt="Qries" src="https://i.imgur.com/ymyZdt1.png" width=60 height=60>
-                </a>
-                <a href="mailto:philipvanveelen@live.nl" target="_blank">
-                  <img alt="Qries" src="images/email.png" width=60 height=60>
-                </a>
-                <!-- <p> Linkedin, Insta, Behance, Github, philipvanveelen@live.nl </p> -->
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/7_Phillip-van-Veelen-Zem.png" role="img" style=" height: 200px;  float: right;  border-radius: 100%;" aria-label="Placeholder: 300x300"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-
-      </div>
-
     </div>
-
-    </div>
-
-
-    <!-- <div class="row">
-        <div class="col-lg-3">
-          <img src="images/The-Hague-University.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre"
-            style="background-color: black;">
-
-          <h2 class="fw-normal">Strong foundation&nbsp;</h2>
-          <p>During my bachelor's in Industrial Product Design I developed a strong foundation in ideation, problem
-            solving and technical feasability.
-          </p>
-         
-        </div>
-        <div class="col-lg-3">
-          <img src="images/tue (1).png" width="140" height="140" class="rounded-circle" alt="Cinque Terre"
-            style="background-color: rgb(177, 193, 218);">
-
-          <h2 class="fw-normal">Current education</h2>
-          <p>Currently, during my Master's of science in Industrial Design at the Technological University of EIndhoven,
-            I build upon my skills with User experience, Human centred and sustainable design.<br>
-            &nbsp;</p>
-          
-        </div>
-        <div class="col-lg-3">
-          <img src="images/carsketch.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
-
-          <h2 class="fw-normal">Passion for Mobility</h2>
-          <p>Every day I take action to persue a carreer in the automotive/ transportation industry, since it is a
-            fascinating, rapidly evolving and competative industry with like-minded people who share my passion.</p>
-          
+    <!-- Button trigger modal 
+            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal"
+                data-target="#exampleModal">
+                view resume
+            </button>
+            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal" data-target="#ModalPI">
+                Professional Identity
+            </button>
+            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal" data-target="#ModalV">
+                Vision </button>
         </div>
 
-        <div class="col-lg-3">
-          <img src="images/teamdesign1.png" width="140" height="140" class="rounded-circle" alt="Cinque Terre">
-
-          <h2 class="fw-normal">Extracuricular activities</h2>
-          <p>During my study, I am Chief Design for automotive student team TU/Ecomotive, tutor assistant in Design
-            Sketching, and a part-time freelance designer.</p>
-        </div>
-      </div> -->
-
-    </div>
-    <!-- START THE FEATURETTES -->
+    </div> -->
 
 
 
-    <!-- TUECO -->
-    <div>
-      <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-5" style="padding-left: 10%;">
-          <h1 class="featurette-heading fw-normal lh-1" style="   margin-top:0px;">TU/ECOMOTIVE <span
-              class="text-muted">CHIEF DESIGN</span></h2>
-            <br>
-            <p class="lead">Chief automotive designer responsible for the exterior and interior design of a sustainable
-              electric car developed by the TU/Ecomotive student team, achieving CO2 neutrality. Developed the
-              packaging,
-              exterior, and interior design leading a team of 3 design students from concept to production in one year.
-              <br><br>
-              As chief design I was responsible for managing the design team, creating concept sketches, 3D concept
-              models
-              and end responsible for the quality of the interior and exterior of the car. The design of the car is just
-              the the physical manifestation of the challenges, successes, setbacks and growth we went through. What I
-              am
-              even more proud of is the positive, rewarding and creative team we have formed together.
-            </p>
-            <div class="container mt-3" style="padding: 0px;">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1"
-                style="margin-left: 0px; margin-bottom: 10px;">
-                + more info </button>
-            </div>
-            <!-- The Modal -->
-            <div class="modal" id="myModal1">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">TU/ECOMOTIVE</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div style="height: 80vh; overflow-y: scroll;" class="modal-body">
-                    <div>
-
-
-                      <div class="popbox">
-                        <h2>What is TU/Ecomotive?</h2>
-
-                        <p> Ecomotive is a student team at the University of Technology Eindhoven that innovates in
-                          building cars with a low environmental footprint. Where other teams excel at efficiency in
-                          driving, Ecomotive focusses on the build process, materials and lifecycle. Often car
-                          manufacturers use lightweight composites to increase efficiency, but these materials are
-                          toxic,
-                          and after the car’s lifecycle has ended, these materials cannot be recycled.
-
-                        </p>
-
-
-                      </div>
-
-                    </div>
-
-                    <img src="images/teamdesign2.png" style="width: 100%">
-
-                    <div class="popbox">
-
-                      <h2>This year's mission'</h2>
-                      <p>
-                        TU/Ecomotive is an automotive student team, focussing on reducing the CO2 footprint of car
-                        manufacturing. ZEM (zero emission mobility) Is a car that has been designed and build in a
-                        single
-                        academic year. ZEM is progressive thinking, new technologies, cooperation with companies wrapped
-                        in a visually appealing, uncompromising package.
-                      </p>
-
-                    </div>
-
-                    <img src="images/WhatsApp Image 2021-10-04 at 11.35.43.jpeg" style="width: 100%">
-
-                    <div class="popbox">
-                      <p>
-                        We want to change the automotive industry by proving that cars can be manufactured in a more
-                        sustainable way, without compromising the design, use and quality of the vehicle. This year we
-                        decided to reach for the stars and archive a CO2 neutral car, by employing smart engineering
-                        solutions, partnering up with innovative companies and consulting experts in the field. The car
-                        is still currently under development.
-                      </p>
-                    </div>
-
-                    <img src="images/eco sketches.jpg" style="width: 100%">
-
-                    <div class="popbox">
-                      <h2>Design process</h2>
-
-                      <p> As chief design I was responsible for managing the design team, creating concept sketches,
-                        3D
-                        concept models and end responsible for the quality of the interior and exterior of the car.
-                        The
-                        design of the car is just the the physical manifestation of the challenges, successes,
-                        setbacks
-                        and growth we went through. What I am even more proud of is the positive, rewarding and
-                        creative
-                        team we have formed together.
-                      </p>
-
-                    </div>
-
-                    <img src="images/klaar1.png" style="width: 100%">
-
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/PEUp9K86-Gw"
-                      title="building ZEM" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-
-                  </div>
-
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                  </div>
+    <!-- Modal 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Resume</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Philip van Veelen Resume.png" style="width: 100%">
 
                 </div>
-              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
+    </div>
+
+    PI 
+    <div class="modal fade" id="ModalPI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Professional Identity</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Personal growth is always my number one priority in design. During projects, I always learn a new
+                        skills. During 1.1, I did an innovation space project requiring a more business-like mindset and
+                        skillset. In my 1.2, I did not only do my first design research project but also made it in
+                        Unity. I will make sure to develop new skills during 2.1.
+                        <br> <br>
+
+                        I always wanted to pursue a career in the automotive industry, which led me to lead the
+                        TU/Ecomotive Design team. Because of that experience, I was hired for intern positions at EBUSCO
+                        and EDAG BV. These valuable experiences provided insight into working in the automotive
+                        industry. I have done extracurricular activities such as Unity certificates, following
+                        automotive sketching courses, and working as a teacher assistant for the exploratory sketching
+                        course. I have many topics that I would like to learn more about. However, spare time is limited
+                        during a master's track, so I always tried to implement my curiosity into my projects. 
+                        
+                        <br> <br>
+                        During this master's program, I realized that corporate positions might not suit my interests. After
+                        graduation, my goal is to find a job in sketching education and join a design studio. The one
+                        consistency in my prior PDPs besides the automotive interest is that I switch interests often,
+                        and having my design studio would mean I can work on a diverse and conceptual project. My
+                        long-term goal is to establish my design studio.
+                        <br> <br>
+
+                        In my work environment, I value dedication and honesty. Sharing a passion and cultivating a
+                        healthy, dedicated, and personal atmosphere is more important than anything in a creative field
+                        since input equals output.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- V 
+    <div class="modal fade" id="ModalV" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Professional Identity</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Whereas most of my PIV documents were tailored towards automotive, I keep my final iteration more
+                        general since my future goal is to diversify my projects. Although my automotive interest will
+                        not likely ever stop, I would like to explore new topics for my starting position.
+                        Sustainability
+                        Manufacturers should explore modularity since it can offer product flexibility, repairability,
+                        and customization. Product manufacturers should be regulated to reduce their environmental
+                        footprint, E-waste generation, and waste generation. It is not within the power of the consumer
+                        to change a systemic problem, and manufacturers should be forced into compliance with the
+                        standardization of materials, connectors, and perhaps even material choice. As a designer, I
+                        believe this will happen due to the environmental effects of mass overconsumption and ecological
+                        neglect. Designers should prepare for this regulation by learning about sustainable materials,
+                        modularity, and the circular economy.
+
+                        User experience
+                        Many users are not adequately considered. I come from a union family, where I was taught the
+                        importance of healthy workplaces. During my internship at EDAG, I talked to many delivery
+                        drivers and considered changing my thesis topic completely. I encountered knee and hip injuries,
+                        negative stigmas surrounding delivery drivers, and exceeding work pressure. I was intrigued by
+                        how design can influence the workspace mentally and physically and would like to explore these
+                        topics further in my professional career.
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> !-->
 
 
 
-        <div class="col-md-7" id="tueco">
-          <div class='modelviewer' style="all:unset;">
-            <model-viewer camera-controls touch-action="pan-y" disable-zoom
-              camera-orbit="calc(210 + env(window-scroll-y) * 6rad) calc(40deg + env(window-scroll-y) * 90deg) 25m"
-              src="littlecarbody.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp"
-              shadow-intensity="2" shadow-softness="0.65" environment-image="piazza_san_marco_4k.hdr">
 
-              <button class="Hotspot" slot="hotspot-1"
-                data-position="-2.30197416512735m -1.0445823257505698m -6.459364446542192m"
-                data-normal="-0.7071491325305951m 0.7070644267627617m 0.000027710546083218003m"
-                data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">CO2 filter</div>
-              </button><button class="Hotspot" slot="hotspot-2"
-                data-position="-0.3095395342161229m 2.2951410816484556m 1.7583684937076836m"
-                data-normal="-0.015442614752137835m 0.9998237865559129m 0.0106734008925717m"
-                data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">Solar panels</div>
-              </button><button class="Hotspot" slot="hotspot-3"
-                data-position="-1.5292542171053625m -1.892434408260573m -1.3845308593002459m"
-                data-normal="1.6292067181709656e-7m 0.9999999999999778m -1.3435888762710447e-7m"
-                data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">3D printed recyclable monocoque</div>
-              </button><button class="Hotspot" slot="hotspot-4"
-                data-position="-0.0670851555937565m -0.7965466695902876m 6.930244106425668m"
-                data-normal="-0.00009582603873870769m -0.28164100905189665m 0.9595198449420418m"
-                data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">3D printed body panels</div>
-              </button>
 
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <button slot="ar-button" id="ar-button">
-                View in your space
-              </button>
-              <div id="ar-prompt">
-                <img src="ar_hand_prompt.png">
-              </div>
-            </model-viewer>
-            <script src="script.js"></script>
-    
-            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    
-          </div>
+    <div class="container">
+        <h1>Past</h1>
+        <div class="row">
+            <!-- Left column with buttons -->
+    <div class="col-md-3">
+        <div class="hoi" style="    display: grid;
+                ">
+            <button class="btn btn-outline-primary section-btn" data-target="#section1">M1.1: INNOVATION SPACE PROJECT:
+                I&E PROCESSES</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section2">USER EXPERIENCE THEORY AND
+                PRACTICE</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section3">DATA-ENABLED DESIGN</button>
+
+            <button class="btn btn-outline-success section-btn" data-target="#section4">EXPLORATORY SKETCHING
+                (Extra)</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section5">PERSPECTIVES ON AESTHETICS</button>
+
+            <button class="btn btn-outline-primary section-btn" data-target="#section6">M1.2 DESIGN RESEARCH</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section7">CONSTRUCTIVE DESIGN
+                RESEARCH</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section8">INTERACTIVE MATERIALITY</button>
+
+            <button class="btn btn-outline-success section-btn" data-target="#section9">AUTOMOTIVE DESIGN SKETCHING
+                (Extra)</button>
+
+            <button class="btn btn-outline-success section-btn" data-target="#section10">TU/ECOMOTIVE (Extra)</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section11">DESIGN INNOVATION
+                STRATEGIES</button>
+
+            <button class="btn btn-outline-success section-btn" data-target="#section12">DESIGN SKETCHING TA
+                (Extra)</button>
+
+            <!-- <button class="btn btn-outline-dark section-btn" data-target="#section13">MATTER OF TRANSFORMATION</button> -->
+
+            <button class="btn btn-outline-primary section-btn" data-target="#section14">M2.1PROJECT AT COMPANY IN THE
+                NETHERLANDS</button>
+
+            <button class="btn btn-outline-dark section-btn" data-target="#section15">DESIGN FOR SOCIAL
+                INNOVATION</button>
+
+        </div>
+    </div>
+
+    <!-- Right column with sections -->
+    <div class="col-md-9">
+        <div id="section1" class="section">
+            <h2>M1.1: INNOVATION SPACE PROJECT: I&E PROCESSES</h2>
+            <p>
+                The Centre of Expertise for Challenge-Based Learning became a formative experience for me. In a group of
+                four rookie entrepreneurs, we were challenged to push the boundaries of our projects and mindsets. When
+                we started the course, we tried fixing engineering and design problems. By the end, we shifted from
+                bicycles to hydroponics and landed on an augmented reality application for language learning.
+                <br><br>
+
+                Throughout the program, I significantly improved my presentation skills and acquired the ability to
+                assess whether a product possessed a viable market fit. Additionally, I delved into the exploration of
+                value networks and discovered how designers can play a more active role in the overall market success of
+                a product.
+                Nevertheless, the process was a valuable learning experience, as it taught us to adapt and iterate based
+                on feedback and market demands.
+
+
+            </p>
+            <img src="images/8096 TUE Future mobility poster examples.jpg" alt="Flowers in Chania"
+                class="projectimage">>
+        </div>
+
+        <div id="section2" class="section d-none">
+            <h2>USER EXPERIENCE THEORY AND PRACTICE</h2>
+            <p>For this course, my group was challenged by PHILIPS to improve the user experience for hospital patients
+                waiting for treatment. We focused on reducing discomfort and anxiety by creating a calming and
+                interactive waiting room environment. My responsibilities included conducting expert interviews,
+                ideation, and prototyping.
+                <br><br>
+                The challenge was to reduce anger in patients in the waiting room. In the United States, people can walk
+                into the hospital waiting room. When one's situation is more severe, they can be treated faster, while
+                others have to wait longer. This difference in waiting time can lead to patient frustration, ranging
+                from annoyance to violence.
+                <br><br>
+
+                Our concept was that the patients required segmentation based on the severity of their medical
+                condition. The waiting room was segmented into four so that the less urgent color codes could not see
+                the desk while the urgent patients could.
+            </p>
+            <img src="images/Artboard Stern1.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+
+        <div id="section3" class="section d-none">
+            <h2>DATA-ENABLED DESIGN</h2>
+            <p>In the course 'Data Enabled Design,' I worked with four people to create MINEBIRD - a bird-shaped device
+                that communicates air quality in an engaging and informative way. My role in the project involved
+                ideation, CAD modeling, and rapid prototyping of various components.
+                We utilized sensors to gather air quality data, which was then communicated to the user through the
+                bird's movement and LED lights.
+                The project allowed us to explore the intersection of data and design and create an innovative solution
+                that raises awareness about air quality.</p>
+            <img src="images/IMG_7953.jpg" alt="car exterior" class="projectimage">
+
+        </div>
+
+        <div id="section4" class="section d-none">
+            <h2>EXPLORATORY SKETCHING
+                (Extra)</h2>
+            <p>During the pandemic, I wanted to have a course in my comfort zone and improve my hard skills. During the
+                course, I became driven to become a teacher assistant since this would allow learning about education
+                and sketching and help finance my study.
+                <br><br>
+                During a guest lecture by Luciano Bove, I also established a connection and became his student.
+            </p>
+            <img src="images/shoe.png" alt="bus interior" class="projectimage">
+
+        </div>
+        <div id="section5" class="section d-none">
+            <h2>PERSPECTIVES ON AESTHETICS</h2>
+            <p>I learned about art history, mood boards, expression, and visual communication. I mixed my passion for Blender 3D, adobe Photoshop and worked with a group of four students.
+            </p>
+            <img src="images/collage.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section6" class="section d-none">
+            <h2>M1.2 DESIGN RESEARCH</h2>
+            <p>
+                Master project 2.1: vibrational feedforward for rear-facing passengers During my Master project 2.1, I
+                worked on implementing vibrational feedforward for rear-facing passengers in cars. This involved
+                researching and developing a system that would provide haptic feedback to passengers in the event of an
+                impending collision, improving their awareness and safety while seated facing the vehicle's rear.
+            </p>
+            <img src="images/research.png" alt="Flowers in Chania" class="projectimage">>
+            <img src="images/research2.png" alt="Flowers in Chania" class="projectimage">>
+
+
+        </div>
+        <div id="section7" class="section d-none">
+            <h2>CONSTRUCTIVE DESIGN
+                RESEARCH</h2>
+            <p> In a group of four students, we conducted constructive design research on haptic feedback in automated
+                vehicle car seats. We aimed to explore how haptic feedback can enhance the user experience in automated
+                vehicle car seats. I learned that choosing a research method should be directly linked to the
+                Research topic and possibilities. When the method suits the topic, the study will be elevated by the
+                I found that a lab approach would be far more suitable for future automated vehicle testing. Since I was
+                interested in continuing to work in this field, I decided to use virtual reality in my M2.1 project,
+                leaning more toward quantitative data.
+            </p>
+            <img src="images/CDRposter.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section8" class="section d-none">
+            <h2>INTERACTIVE MATERIALITY</h2>
+            <p>
+                In the course Interactive Materiality, we explored the relationship between materials and
+                interaction design, and how they can be combined to create novel and engaging user experiences.
+                As a group of students, we worked on the THOM project, which aimed to design new materiality
+                through the combination of interaction gestalt, materials, and actuators. We investigated the
+                role of haptic and tactile feedback in creating meaningful interactions and explored different
+                materials and actuation methods to achieve our design goals. Our project focused on the design
+                of an interactive surface that would respond to user inputs with a variety of visual and haptic
+                feedback, and we used our knowledge of material properties and interaction design to create a
+                unique and compelling user experience.
+            </p>
+            <img src="images/IM.jpg" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section9" class="section d-none">
+            <h2>AUTOMOTIVE DESIGN SKETCHING
+                (Extra)</h2>
+            <p>
+
+                When I met Luciano Luciano Bove, I wanted to join his one-on-one lectures on automotive design
+                sketching. Not only was it enjoyable and informative, but I also implemented his insights into my
+                student team design. It made me more confident in my abilities, and I learned to work faster. Also,
+                shading organic shapes opened new possibilities for expressing and exploring shapes.
+
+            </p>
+            <img src="images/aygo.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section10" class="section d-none">
+            <h2>TU/ECOMOTIVE (Extra)</h2>
+            <p>Chief automotive designer responsible for the exterior and interior design of a sustainable
+                electric car developed by the TU/Ecomotive student team, achieving CO2 neutrality. Developed the
+                packaging, exterior, and interior design leading a team of 3 design students from concept to
+                production in one year.
+
+                As chief design I was responsible for managing the design team, creating concept sketches, 3D
+                concept models and end responsible for the quality of the interior and exterior of the car. The
+                design of the car is just the the physical manifestation of the challenges, successes, setbacks
+                and growth we went through. What I am even more proud of is the positive, rewarding and creative
+                team we have formed together.</p>
+            <img src="images/IMG_7953.jpg" alt="car exterior" class="projectimage">
+
+        </div>
+        <div id="section11" class="section d-none">
+            <h2>DESIGN INNOVATION
+                STRATEGIES</h2>
+            <p>In a group of four students, we developed an AI-powered web navigation tool to assist students in finding relevant information online. 
+                Our goal was to explore design innovation strategies for developing helpful and intuitive web-based tools.</p>
+            <img src="images/klaar1.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section12" class="section d-none">
+            <h2>DESIGN SKETCHING TA
+                (Extra)</h2>
+            <p>
+                Design sketching is one of my biggest passions, and I had the amazing opportunity to assist
+                Martijn van der Wiel's classes for a year. Assisting his classes allowed me to improve my own
+                design sketching abilities, while also learning how to teach others. It was truly an enriching
+                experience, and I learned a lot from it. Teaching others how to sketch has allowed me to gain a
+                deeper understanding of the sketching process and how to effectively communicate ideas through
+                sketches. </p>
+            <img src="images/exploratory.png" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+
+        <div id="section13" class="section d-none">
+            <h2>MATTER OF TRANSFORMATION</h2>
+            <p>
+                In the course 'Data Enabled Design', I worked in a group of four people to create MINEBIRD - a
+                bird-shaped device that communicates air quality in an engaging and informative way. My role in
+                the project involved ideation, CAD modeling, and rapid prototyping of various components. We
+                utilized sensors to gather air quality data, which was then communicated to the user through the
+                bird's movement and LED lights. The project allowed us to explore the intersection of data and
+                design, and create a solution that raises awareness about air quality in an innovative way. </p>
+            <img src="images/hoi.jpg" alt="Flowers in Chania" class="projectimage">>
+
+        </div>
+        <div id="section14" class="section d-none">
+            <h2>M2.1PROJECT AT COMPANY IN THE
+                NETHERLANDS</h2>
+            <p>Within Ebusco I wanted to perform user-centred design, for which I interview people on the street and in questionnaires. This lead to few oppertunities, for which I designed a light-emitting ceiling and angled chairs to increase the presence of windows in the field of view.
+                
+                I decided to use Unity 3D to improve the audit process of Ebusco since I noticed that the current process was highly labour intensive. 
+                I completed unity certificates and created a web UI, along with design proposals to improve the atmosphere on the bus. I developed my compitencies in implementing rea-time graphics, working outside of the desogn brief, and user studies.
+                
+            </p>
+            <img src="images/ebuscoapp.png" alt="bus interior" class="projectimage">
+
+        </div>
+        <div id="section15" class="section d-none">
+            <h2>DESIGN FOR SOCIAL
+                INNOVATION</h2>
+            <p>
+                In this course, I worked in a group of 4 students to address the issue of sound disruptions at the library. We conducted user research and identified pain points, then worked to design a solution that would reduce noise levels while maintaining a comfortable and welcoming environment. 
+                My role in the project involved literature research, ideation and presentating. </p>
+            <img src="images/disgraphic.png" alt="Flowers in Chania" class="projectimage">>
 
         </div>
 
 
 
+    </div>
+    </div>
+    </div>
 
 
 
 
+    <div class="row featurette" style="background-color: rgb(57, 57, 57) ; justify-content: center; padding-bottom: 50px;">
+        <div class="col-md-5" \>
 
 
 
-
-
-
-
-
-        <!-- VR -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette" style="margin-left:100px; margin-right: 100px;">
-          <div class="col-md-7 order-md-2" style="padding-right: 10%;">
-            <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">VR Design Research</h2>
-            <br>
+            <h2 class="featurette-heading fw-normal lh-1 text-white" style="    margin-top: 0px;">Present </h2>
             <p class="lead">
-              Multiple automotive manufacturers have developed concept cars with face-to-face layouts, such as the
-              Renault Symbioz, Mini Urbanaut, Volkswagen Sedric, and the Volvo 360 concept. To fully benefit from
-              driving in an AV, research indicates that it would be optimal to have an alternative seat layout, compared
-              to the regular rows pointing in the same direction. This futuristic seat configuration is an old idea,
-              since the early automobiles that were developed when horse carriages were the main transportation method,
-              featured a similar layout
-              <br>
-              <br>
-              Vibrotactile displays are actuators that communicate information by causing a sense of vibration through
-              the perception of touch. When used solely, it functions as a non-distracting, discrete and immediate form
-              of communication. The vibrations can provide occupants with information such as the location of
-              surrounding objects, and the position of the vehicle on the road.
-            </p>
-            <div class="container mt-3" style="padding: 0px;">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalvr"
-                style="margin-left: 0px; margin-bottom: 10px;">
-                + more info </button>
-            </div>
-            <!-- The Modal -->
-            <div class="modal" id="myModalvr">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
+                I approached the EDAG group to explore sustainability within the commercial vehicle market. By combining the expert knowledge and experience from EDAG Helmond, my experience from the research design development track, my practical skills from my bachelor, my passion for automotive design, and my experience from being part of the TU/Ecomotive student team, I wish to end my academic career by combining my passion, knowledge, and enthusiasm into a final master project.
+                <br> <br>
 
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">VR</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
+                In this project, we researched the context of commercial vehicles in urban zones regarding the electrification and circularity potential to maximize sustainability in a financially viable method.
+                The vehicle is designed to perform in a product service system and maximize its lifespan in a financially viable method. This shift to PSS emphasizes resource optimization, reduced environmental impact, and improved economic performance. This is done by considering the product hierarchy, segment, and customization service.
+                <br> <br>
 
-                  <!-- Modal body -->
-                  <div class="modal-body">
+                The topic of designing a versatile electric vehicle turned out to be more extensive than I initially anticipated. I encountered some challenges along the way and sometimes felt a bit stuck. Due to time constraints, I couldn’t evaluate the design as thoroughly as I had hoped.
+                I am grateful for the opportunity to collaborate with Wouter and Richard, whose expertise and insights were truly inspiring. Their contributions helped shape the design in meaningful ways. Throughout the project, I found the circular economy concept particularly inspiring. Learning about it and reading about its principles was a valuable experience, even though I faced some difficulty in implementing those ideas.
+                Overall, I'm proud of the progress in developing a vehicle concept that aligns with the needs and aspirations of our target users. The project has taught me essential lessons about prioritization, adaptability, and the power of collaboration. I look forward to applying the knowledge I gained to future endeavours and remain enthusiastic about the circular economy concept.
+                </p>
 
-                    <iframe width="100%" height="720" src="https://www.youtube.com/embed/H6rUF3Np8VY"
-                      title="haptic feedforward for rear facing passengers, a vr study" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
 
-                    <iframe src="/PaperphilipvanveelenM12v2.pdf" #view=Fit width="100%" height="720px">
-                    </iframe>
-                  </div>
 
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                  </div>
+        </div>
+   
+        <div class="col-md-3" style="display: grid;     height: -webkit-fill-available;">
 
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-5 order-md-1" id="vr">
+
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/seatverslag.jpg" role="img" aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /></img>
+                src="images/posters4.png" role="img" style="     width: -webkit-fill-available;  float: right;  ; 
+              
+    
+                " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
 
-          </div>
+                
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="images/posters2.png" role="img" style="     width: -webkit-fill-available;  float: right;  ; 
+          
+
+            " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
+
         </div>
 
-
-
-
-        <!-- themis -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette" id="themis">
-          <div class="col-md-7" style="padding-left: 10%;">
-            <h2 class="featurette-heading fw-normal lh-1">Themis (pre-master project)</h2>
-            <br>
-            <p class="lead">Currently, police cars used by the Dutch police force are modified civilian cars made
-              suitable for patrolling the region and quickly responding to calls, but this compromises the usability and
-              effectives when compared to a vehicle designed for this task from the ground up.</p>
-            <div class="container mt-3" style="padding: 0px;">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalthemis"
-                style="margin-left: 0px; margin-bottom: 10px;">
-                + More info </button>
-            </div>
-            <!-- The Modal -->
-            <div class="modal" id="myModalthemis">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Themis</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div class="modal-body">
-
-                    <img src="images/themis.png" style="width: 100%">
-                    <br>
-                    <img src="images/popo-Recovered-Recovered.png " style="width: 100%">
-                    <img src="images/steering wheel.jpg " style="width: 100%">
-
-
-                  </div>
-
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/explodedthemis.jpg" role="img" aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /></img>
-
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-
-        <!-- sketch -->
-
-        <div class="row featurette" id="sketch" style="margin-left:100px; margin-right: 100px;">
-          <div class="col-md-7 order-md-2" style="padding-right: 10%;">
-            <h2 class="featurette-heading fw-normal lh-1" style=" margin-top:0px">Design Sketching</h2>
-            <br>
-            <p class="lead"> This section I would like to dedicate to my favorite activity: Design Sketching. It is a
-              tool that enables designers to come into a state of flow: It is not the brain guiding the hand, but the
-              hand guiding the brain. When time, urgency and constraints melt away, that is when there is room for
-              innovation and creativity.&nbsp;</p>
-            <p class="lead">Also I would like to dedicate this section to the two designers that helped me get where I
-              am today: Martijn van der Wiel and Luciano Bove. Their classes, feedback, guidance and kindness has taught
-              me about design, professionality and enjoying your work.&nbsp; &nbsp; &nbsp; &nbsp;<br>
-            <div class="container mt-3" style="padding: 0px;">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalsketch"
-                style="margin-left: 0px; margin-bottom: 10px;">
-                + More info </button>
-            </div>
-            <!-- The Modal -->
-            <div class="modal" id="myModalsketch">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Sketches</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-
-                  <!-- Modal body -->
-                  <div class="modal-body">
-
-
-                    <img src="images/dolce2.png " style="width: 100%">
-
-                    <img src="images/lemans speedyman2.png" style="width: 100%">
-
-                    <img src="images/aygo.png" style="width: 100%">
-                   
-                    <img src="images/rari.png " style="width: 100%">
-
-                    <img src="images/blue.jpeg " style="width: 100%">
-
-
-
-                  </div>
-
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-md-5 order-md-1" id="vr">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/7_Phillip-van-Veelen-Zem.png" role="img" aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /></img>
-
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <hr class="featurette-divider">
-
-
-        <!-- Gravity sketch -->
-
-        <div class="row featurette" id="GS">
-          <div class="col-md-7" style="padding-left: 10%;">
-            <h2 class="featurette-heading fw-normal lh-1">Gravity sketch models</h2>
-            <br>
-            <p class="lead">Comming soon!</p>
-            <!-- <div class="container mt-3" style="padding: 0px;">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3"
-                  style="margin-left: 0px; margin-bottom: 10px;">
-                  + More info </button>
-              </div>
-
-
-              <div class="modal" id="myModal3">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-    
-                    <div class="modal-header">
-                      <h4 class="modal-title">Themis</h4>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-    
-                    <div class="modal-body">
-
-                      <img src="images/" style="width: 100%">
-
-
-                    </div>
-    
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-    
-                  </div>
-                </div>
-              </div> -->
-
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              src="images/h001.98.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
-              focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /></img>
-
-          </div>
-        </div>
-
-
-
-
-
-        <!-- /END THE FEATURETTES -->
-
-      </div><!-- /.container -->
     </div>
 
 
 
-   
-
-
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; Philip van Veelen &middot; </p>
-    </footer>
-  </main>
+    <div class="row " style="background-color: rgb(255, 255, 255) ; justify-content: center;">
+        <div class="col-md-8" \>
 
 
 
+            <h2 class="featurette-heading fw-normal lh-1" style="   margin-top: 0px;">Future </h2>
+            <p class="lead" style="color: black;">
+                I will create my own design studio as a part-time business, because I want to work on shorter and more diverse projects, and I believe that my hardskills, user centred process and innovation method can help me grow in this
+                field. Starting my own business will allow me to choose projects that align with my interests and
+                abilities. It will allow me to work on various design projects, including digital design, graphic design,
+                and product design. I will be able to slowly build up my repetaire and tasks. This will enable me to improve my skills and expertise by constantly engaging with
+                different clients and industries. Working on shorter, more diverse projects will expose me to new
+                challenges, technologies, and design trends, contributing to my professional growth and development.
+            </p>
+            <img src="images/hoi.jpg" alt="Flowers in Chania" class="projectimage">
 
- 
+
+            <p class="lead" style="color: black;">
+
+                I will become a teacher for design sketching classes because I have a passion for design and want to
+                share my knowledge and skills with others. Teaching design sketching will allow me to inspire and
+                empower future designers. Because I have a strong foundation in design sketching and enjoy helping
+                others develop their sketching abilities, becoming a teacher will allow me to impact students' creative
+                journeys. I found learning from Martijn van der Wiel inspiring and enjoyed being a teacher
+                assistant. Besides, Teaching requires a deep understanding of the subject, pushing me to continuously
+                improve with the latest design techniques and trends. It will also allow me to learn
+                from my students' perspectives and approaches.
+                
+            </p>
+            <img src="images/hoi.jpg" alt="Flowers in Chania" class="projectimage">
+
+
+
+
+
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; Philip van Veelen &middot; </p>
+        </footer>
+        </main>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSqn/E"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+
 
 </body>
 
