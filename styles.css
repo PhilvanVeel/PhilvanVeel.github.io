@@ -51,10 +51,7 @@ div.panel {
 
 
 
-.projectimage{
-width: 100%;
-
-}
+.projectimage{width: -webkit-fill-available;}
 
 .display-4 {
     font-size: 4rem;
