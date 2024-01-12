@@ -2,692 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* Additional styles for button background images */
+        .section-btn {
+            background-size: cover; /* Ensure the image covers the entire button without stretching */
+            background-position: center; /* Center the image within the button */
+            background-blend-mode: darken;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background to darken the image */
+            color: white; /* Set text color to white */
+            border: none; /* Remove button border */
+            width: 100%; /* Set button width to 100% */
+        }
+
+        /* Additional styles for the video banner */
+        #video-banner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Carousel styles */
+        .carousel-inner {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
     <title>Philip Van Veelen - Industrial Designer</title>
-    <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <!-- Add a sticky navbar -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Philip Van Veelen</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
-    <!-- Add a welcome banner with a video background and placeholder text -->
-    <section id="banner">
-
-        <div id="video-background">
-            <video autoplay loop muted>
-                <source src="images\video.mp4" type="video/mp4">
-            </video>
-
-            <img src="images\logo pvvwhite.png">
-            <h2>Philip van Veelen</h2>
-            <h3> Industrial Design Portfolio</h3>
-
-        </div>
-    </section>
-
-
-
-
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette" style="background-color: rgb(255, 255, 255) ; justify-content: center;">
-        <div class="col-md-6" \>
-
-
-
-            <h2 class="featurette-heading fw-normal lh-1 text-black">Professional Identity</span></h2>
-          <p class="lead" style="color: black;">My professional identity is rooted in my passion for the process of designing. I experiment with implementing new software, techniques and tricks to steer projects in new directions. I have a deep love for design sketching, which enables me to ideate, communicate and pitch. I am a creator, explorer and accommodator. My favourite design activities are problem exploration, ideation and discussion.</p>
-		
-		
-          <p class="lead" style="color: black;">During my master's study, I gained knowledge about user experience and programming, but I also evolved my design process. Because I have always dreamt of designing and building a car, I joined the TU/ecomotive team as chief design. We created a sustainable electric vehicle within a year in this student team. I could express my passion for design sketching and CAD. Still, I also improved my ability to work in multi-disciplinary, multi-cultured teams, integrating hardware, rapid prototyping, and design leadership. Besides my learning activities, I Explored my passion for exploratory sketching broadly. As a designer, I worked on many side projects, including company logos and products. I assisted in design sketch courses, aided the succeeding TU/ecomotive team via workshops and feedback, and followed online courses to discover my preferred method and style.</p>
-            <p class="lead" style="color: black;">Whereas my study trajectory guided me to become a designer in an automotive manufacturer, I learned that educating and designing with startups and smaller businesses are my favourite moments, which is why after graduation, I will apply for part-time educational jobs and create my design studio. I believe that the combination of gaining experience as a designer and the inspiration from education will enable me to make a valuable contribution to society and suits my skillset best. </p>
-        </div>
-        <div class="col-md-2" style="display: grid;     height: -webkit-fill-available;">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                src="images/zemsketch (2).png" role="img" style="     width: -webkit-fill-available;  float: right;  border-radius: 100%; 
-              
-    
-                " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
-               
-
-        </div>
-
-        <div> 
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                src="images/profile.png" role="img" style="     width: 700px;  float: right;  border-radius: 0%; 
-          
-
-            " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
-            
-        </div>
-
-    </div>
-    <div class="row featurette" style="background-color: rgb(57, 57, 57) ; justify-content: center;">
-        <div class="col-md-8" \>
-
-            <h2 class="featurette-heading fw-normal lh-1 text-white">Vision</span></h2>
-        </div>
-        <div class="row featurette" style="background-color: rgb(57, 57, 57) ; justify-content: center;">
-
-            <div class="col-md-4" \>
-
-
-
-                <p class="lead">Manufacturers should explore modularity since it can offer product flexibility,
-                    repairability, and customization. Product manufacturers should be regulated to reduce their
-                    environmental footprint, E-waste generation, and waste generation. It is not within the power of the
-                    consumer to change a systemic problem, and manufacturers should be forced into compliance with the
-                    standardization of materials, connectors, and perhaps even material choice. As a designer, I believe
-                    this will happen due to the environmental effects of mass overconsumption and ecological neglect.
-                    Designers should prepare for this regulation by learning about sustainable materials, modularity,
-                    and the circular economy.
-
-            </div>
-            <div class="col-md-4" \>
-                </p>
-                <p class="lead">As an aspiring design sketching teacher, I will strive to create a positive environment that emphasises the importance of patience, cultivating a growth mindset, and embracing failure as a part of growth. I will continue to motivate and support students to develop their design skills, encouraging them to experiment and take risks.
-
-                    I believe education is never over, and as an aspiring teacher, I strive to challenge students to find their strengths. I will do my best to inspire a growth mindset. I want students to know that they can achieve their goals with patience, knowledge and efficient practice. 
-                    
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-    <div class="col-md-2" style="display: grid;     height: -webkit-fill-available;">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            src="images/zemsketch (1).png" role="img" style="     width: -webkit-fill-available;  float: right;  border-radius: 100%; 
-              
-    
-                " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-    </div>
-    </div>
-    <!-- Button trigger modal 
-            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal"
-                data-target="#exampleModal">
-                view resume
-            </button>
-            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal" data-target="#ModalPI">
-                Professional Identity
-            </button>
-            <button type="button" class="btn btn-outline-light section-btn" data-toggle="modal" data-target="#ModalV">
-                Vision </button>
-        </div>
-
-    </div> -->
-
-
-
-
-    <!-- Modal 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Resume</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="images/Philip van Veelen Resume.png" style="width: 100%">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <!-- Video banner -->
+    <div id="video-banner">
+        <video id="video" autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="text-overlay">
+            <h1>Philip van Veelen</h1>
+            <p>Industrial Design Portfolio</p>
         </div>
     </div>
 
-    PI 
-    <div class="modal fade" id="ModalPI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Professional Identity</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Personal growth is always my number one priority in design. During projects, I always learn a new
-                        skills. During 1.1, I did an innovation space project requiring a more business-like mindset and
-                        skillset. In my 1.2, I did not only do my first design research project but also made it in
-                        Unity. I will make sure to develop new skills during 2.1.
-                        <br> <br>
-
-                        I always wanted to pursue a career in the automotive industry, which led me to lead the
-                        TU/Ecomotive Design team. Because of that experience, I was hired for intern positions at EBUSCO
-                        and EDAG BV. These valuable experiences provided insight into working in the automotive
-                        industry. I have done extracurricular activities such as Unity certificates, following
-                        automotive sketching courses, and working as a teacher assistant for the exploratory sketching
-                        course. I have many topics that I would like to learn more about. However, spare time is limited
-                        during a master's track, so I always tried to implement my curiosity into my projects. 
-                        
-                        <br> <br>
-                        During this master's program, I realized that corporate positions might not suit my interests. After
-                        graduation, my goal is to find a job in sketching education and join a design studio. The one
-                        consistency in my prior PDPs besides the automotive interest is that I switch interests often,
-                        and having my design studio would mean I can work on a diverse and conceptual project. My
-                        long-term goal is to establish my design studio.
-                        <br> <br>
-
-                        In my work environment, I value dedication and honesty. Sharing a passion and cultivating a
-                        healthy, dedicated, and personal atmosphere is more important than anything in a creative field
-                        since input equals output.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- V 
-    <div class="modal fade" id="ModalV" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Professional Identity</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Whereas most of my PIV documents were tailored towards automotive, I keep my final iteration more
-                        general since my future goal is to diversify my projects. Although my automotive interest will
-                        not likely ever stop, I would like to explore new topics for my starting position.
-                        Sustainability
-                        Manufacturers should explore modularity since it can offer product flexibility, repairability,
-                        and customization. Product manufacturers should be regulated to reduce their environmental
-                        footprint, E-waste generation, and waste generation. It is not within the power of the consumer
-                        to change a systemic problem, and manufacturers should be forced into compliance with the
-                        standardization of materials, connectors, and perhaps even material choice. As a designer, I
-                        believe this will happen due to the environmental effects of mass overconsumption and ecological
-                        neglect. Designers should prepare for this regulation by learning about sustainable materials,
-                        modularity, and the circular economy.
-
-                        User experience
-                        Many users are not adequately considered. I come from a union family, where I was taught the
-                        importance of healthy workplaces. During my internship at EDAG, I talked to many delivery
-                        drivers and considered changing my thesis topic completely. I encountered knee and hip injuries,
-                        negative stigmas surrounding delivery drivers, and exceeding work pressure. I was intrigued by
-                        how design can influence the workspace mentally and physically and would like to explore these
-                        topics further in my professional career.
-
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div> !-->
-
-
-
-
-
+    <!-- Portfolio sections -->
     <div class="container">
-        <h1>Past</h1>
+        <h1>Projects</h1>
         <div class="row">
             <!-- Left column with buttons -->
             <div class="col-md-3">
-                <div class="hoi" style="    display: grid;
-                ">
-                    <button class="btn btn-outline-primary section-btn" data-target="#section1">M1.1: INNOVATION SPACE
-                        PROJECT:
-                        I&E PROCESSES</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section2">USER EXPERIENCE THEORY AND
-                        PRACTICE</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section3">DATA-ENABLED
-                        DESIGN</button>
-
-                    <button class="btn btn-outline-success section-btn" data-target="#section4">EXPLORATORY SKETCHING
-                        (Extra)</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section5">PERSPECTIVES ON
-                        AESTHETICS</button>
-
-                    <button class="btn btn-outline-primary section-btn" data-target="#section6">M1.2 DESIGN
-                        RESEARCH</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section7">CONSTRUCTIVE DESIGN
-                        RESEARCH</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section8">INTERACTIVE
-                        MATERIALITY</button>
-
-                    <button class="btn btn-outline-success section-btn" data-target="#section9">AUTOMOTIVE DESIGN
-                        SKETCHING
-                        (Extra)</button>
-
-                    <button class="btn btn-outline-success section-btn" data-target="#section10">TU/ECOMOTIVE
-                        (Extra)</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section11">DESIGN INNOVATION
-                        STRATEGIES</button>
-
-                    <button class="btn btn-outline-success section-btn" data-target="#section12">DESIGN SKETCHING TA
-                        (Extra)</button>
-
-                    <!-- <button class="btn btn-outline-dark section-btn" data-target="#section13">MATTER OF TRANSFORMATION</button> -->
-
-                    <button class="btn btn-outline-primary section-btn" data-target="#section14">M2.1PROJECT AT COMPANY
-                        IN THE
-                        NETHERLANDS</button>
-
-                    <button class="btn btn-outline-dark section-btn" data-target="#section15">DESIGN FOR SOCIAL
-                        INNOVATION</button>
-
+                <div class="hoi">
+                    <!-- Buttons will be dynamically generated here -->
                 </div>
             </div>
-
             <!-- Right column with sections -->
             <div class="col-md-9">
-                <div id="section1" class="section">
-                    <h2>M1.1: INNOVATION SPACE PROJECT: I&E PROCESSES</h2>
-                    <p> The Centre of Expertise for Challenge-Based Learning became a formative experience for me. In a group of four rookie entrepreneurs, we were challenged to push the boundaries of our projects and mindsets. When we started the course, we tried fixing engineering and design problems. By the end, we shifted from bicycles to hydroponics and landed on an augmented reality application for language learning, because we used value maps, empathy maps and business model canvasses. This approach and creative process changed our perception of innovation. Instead of trying to create a product with innovative technology, the value network lead to more grounded decision making.&nbsp;</p>
-                    <p>Throughout the program, I significantly  my presentation skills and acquired the ability to assess whether a product possessed a viable market fit. Additionally, I delved into the exploration of value networks and discovered how designers can play a more active role in the overall market success of a product. The process was a valuable learning experience, as it taught us to adapt and iterate based on feedback, validation and market demands.&nbsp; </p>
-<img src="images/8096 TUE Future mobility poster examples.jpg" alt="Flowers in Chania"
-                        class="projectimage">>
+                <!-- Section to display external text -->
+                <div id="externalText"></div>
+                <!-- Carousel -->
+                <div id="externalImage" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner"></div>
+                    <a class="carousel-control-prev" href="#externalImage" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#externalImage" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-
-                <div id="section2" class="section d-none">
-                    <h2>USER EXPERIENCE THEORY AND PRACTICE</h2>
-                    <p>After learning about the state-of-the-art of UX, we took part in a design challenge by PHILIPS to improve the user experience for hospital
-                        patients
-                        waiting for treatment. We focused on reducing discomfort and anxiety by creating a calming and
-                        interactive waiting room environment. My responsibilities included conducting expert interviews,
-                        ideation, and prototyping.
-                        <br><br>
-                        The challenge was to reduce anger in patients in the waiting room. In the United States, people
-                        can walk
-                        into the hospital waiting room. When one's situation is more severe, they can be treated faster,
-                        while
-                        others have to wait longer. This difference in waiting time can lead to patient frustration,
-                        ranging
-                        from annoyance to more serious consequences.
-                        <br><br>
-
-                        Our concept was that the patients required segmentation based on the severity of their medical
-                        condition. The waiting room was segmented into four so that the less urgent color codes could
-                        not see
-                        the desk while the urgent patients could. This layout was paired with an application that indicates waiting times, but is also transparent when an emergency patient has to be treated priorly. The application is visualised as an aquarium.
-                    </p>
-                    <img src="images/Artboard Stern1.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-
-                <div id="section3" class="section d-none">
-                    <h2>DATA-ENABLED DESIGN</h2>
-                    <p>In the course 'Data Enabled Design,' I worked with four people to create MINEBIRD - a bird-shaped
-                        device
-                        that communicates air quality in an engaging and informative way. My role in the project
-                        involved
-                        ideation, CAD modeling, and rapid prototyping of various components.
-                        We utilized sensors to gather air quality data which was sent to Datafoundry, which was then communicated to the user through
-                        the
-                        bird's movement and LED lights.
-						
-						The shape of a canarie was chosen as an emulation of the use of birds through mining tunnels throughout history. If the air quality drops below a treshhold, the bird's head starts lowering.
-						The bird's electronics consisted of an ESP32 which was outfitted with an air-quality sensor, step motor and several LEDs.
-                        The project allowed us to explore the intersection of data and design and create an innovative
-                        solution
-                    that informs the user about awareness about their air quality.</p>
-                    <img src="images/IMG_7953.jpg" alt="car exterior" class="projectimage">
-
-                </div>
-
-                <div id="section4" class="section d-none">
-                    <h2>EXPLORATORY SKETCHING
-                        (Extra)</h2>
-                    <p>During the pandemic, I wanted to have a course in my comfort zone and improve my hard skills.
-                        During the
-                        course, I became driven to become a teacher assistant since this would allow learning about
-                        education
-                        and sketching and help finance my study.
-                        <br><br>
-                        During a guest lecture by Luciano Bove, I also established a connection and became his student.
-                    </p>
-                    <img src="images/sketches.jpeg" alt="bus interior" class="projectimage">
-
-                </div>
-                <div id="section5" class="section d-none">
-                    <h2>PERSPECTIVES ON AESTHETICS</h2>
-                    <p>After an overview of aesthetic theory, students were challenged to create moodboards on several topics. In a group of four students we were assigned the topic of agoraphobia; the fear of wide-open spaces. I learned about art history, mood boards, expression, and visual communication. In later assignments, students were free to choose their own topics. I saw this as an oppertunity to mix my
-                        interests in Blender 3D and adobe Photoshop to visualise a design manifesto for 'design on mars'. I implemented different fonts, aesthetics and self-made assets to communicate our vision on a future multi-cultural and technologically advanced mars colony.
-                    </p>
-                    <img src="images/collage.png" alt="Flowers in Chania" class="projectimage">>
-                    <img src="images/Agoraphobia2.jpg" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section6" class="section d-none">
-                    <h2>M1.2 DESIGN RESEARCH</h2>
-                    <p>
-                      Master project 2.1: vibrational feedforward for rear-facing passengers During my Master project
-                      2.1, I
-                      worked on implementing vibrational feedforward for rear-facing passengers in automated vehicles. I developed a VR application in which the participants would be driven through the TU/e campus. This prototype was paired with a seat outfitted with four vibrotactile actuators, connected to an Arduino board. By synchronising the vibrations with the moments where the simulated vehicle would turn, corners could be anticipated. This reduced the VR motion sickness. During this project I learned about Unity 3D, programming, user studies and research methods. </p>
-                    <img src="images/research.png" alt="Flowers in Chania" class="projectimage">>
-                    <img src="images/research2.png" alt="Flowers in Chania" class="projectimage">>
-
-
-                </div>
-                <div id="section7" class="section d-none">
-                    <h2>CONSTRUCTIVE DESIGN
-                        RESEARCH</h2>
-                    <p> During this course, we conducted constructive design research on haptic feedback in
-                        automated
-                        vehicle car seats. We aimed to explore how haptic feedback can enhance the user experience in
-                        automated
-                        vehicle car seats.
-						We developed a test prototype, consisting of a seat cover with muplitple vibriting actuators. We used this research prototype in a stationary vehicle to research how different vibrational patterns would affect users.
-                        I found that a lab approach would be far more suitable for future automated vehicle testing.
-                        Since I was
-                        interested in continuing to work in this field, I decided to use virtual reality in my M2.1
-                        project,
-                        leaning more toward quantitative data.
-                    </p>
-                    <img src="images/CDRposter.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section8" class="section d-none">
-                    <h2>INTERACTIVE MATERIALITY</h2>
-                    <p>
-                        In the course Interactive Materiality, we explored the relationship between materials and
-                        interaction design, and how they can be combined to create novel and engaging user experiences.
-                        As a group of students, we worked on the THOM project, which aimed to design new materiality
-                        through the combination of interaction gestalt, materials, and actuators. We investigated the
-                        role of haptic and tactile feedback in creating meaningful interactions and explored different
-                        materials and actuation methods to achieve our design goals. Our project focused on the design
-                        of an interactive surface that would respond to user inputs with a variety of visual and haptic
-                        feedback, and we used our knowledge of material properties and interaction design to create a
-                        unique and compelling user experience.
-						Our final design consisted of a silicone - infused synthetic textile, with a rotating 3d-printed TPU structure, which was ment to express the caustics and movement of bodies of water. Although the research on interactive materiality was an interesting topic, this course also contributed to my concern for sustainabillity, since the mixing of materials and the implementation of electronics made me consider the environmental effects of such design theories. 
-						
-				
-                    </p>
-                    <img src="images/IM.jpg" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section9" class="section d-none">
-                    <h2>AUTOMOTIVE DESIGN SKETCHING
-                        (Extra)</h2>
-                    <p>
-
-                      When I met Luciano Luciano Bove, I wanted to join his one-on-one lectures on automotive design
-                      sketching. Not only was it enjoyable and informative, but I also implemented his insights into
-                      my
-                      student team design. It made me more confident in my abilities, and I learned to work faster.
-                      Also,
-                    shading organic shapes opened new possibilities for expressing and exploring shapes.&nbsp; </p>
-                    <img src="images/aygo.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section10" class="section d-none">
-                    <h2>TU/ECOMOTIVE (Extra)</h2>
-                    <p>Chief automotive designer responsible for the exterior and interior design of a sustainable
-                        electric car developed by the TU/Ecomotive student team, achieving CO2 neutrality. Developed the
-                        packaging, exterior, and interior design leading a team of 3 design students from concept to
-                        production in one year.
-
-                        As chief design I was responsible for managing the design team, creating concept sketches, 3D
-                        concept models and end responsible for the quality of the interior and exterior of the car. The
-                        design of the car is just the the physical manifestation of the challenges, successes, setbacks
-                        and growth we went through. What I am even more proud of is the positive, rewarding and creative
-                        team we have formed together.</p>
-                    <img src="images/IMG_7953.jpg" alt="car exterior" class="projectimage">
-
-                </div>
-                <div id="section11" class="section d-none">
-                    <h2>DESIGN INNOVATION
-                        STRATEGIES</h2>
-                    <p>In a group of four students, we were challenged to use Artificial Inteligence combined with image processing to create a business proposal. Our group conceptualised an AI-powered web navigation tool to assist students in
-                        finding relevant information online.
-                         Using the methods from 'the lean startup' by Eric van Ries, we underwent an iterative process to create a business proposal. We had to validate assumptions, decide when to persist, persevere or perish. For me, this course was almost like a continuation of the Innovation Space project, but paired with more elaborate and comprehensive methods. The skills and lessons from Innovation Space became more a more structured procces with more clarity and scientific bases. It bridged the acedemic methods with the pragmatic validation.  </p>
-                    <img src="images/klaar1.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section12" class="section d-none">
-                    <h2>DESIGN SKETCHING TA
-                        (Extra)</h2>
-                    <p>
-                        Design sketching is one of my biggest passions, and I had the amazing opportunity to assist
-                        Martijn van der Wiel's classes for a year. Assisting his classes allowed me to improve my own
-                        design sketching abilities, while also learning how to teach others. Helping to teach others how to sketch has allowed me to gain a
-                        deeper understanding of the sketching process and how to effectively communicate ideas through
-                        sketches. I realised that the process of learning requires a more analytical approach, and that the mentality of students is one of the most contributing factors to skill-development. </p>
-                    <img src="images/exploratory.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-
-                <div id="section13" class="section d-none">
-                    <h2>MATTER OF TRANSFORMATION</h2>
-                    <p>
-                        In the course 'Data Enabled Design', I worked in a group of four people to create MINEBIRD - a
-                        bird-shaped device that communicates air quality in an engaging and informative way. My role in
-                        the project involved ideation, CAD modeling, and rapid prototyping of various components. We
-                        utilized sensors to gather air quality data, which was then communicated to the user through the
-                        bird's movement and LED lights. The project allowed us to explore the intersection of data and
-                        design, and create a solution that raises awareness about air quality in an innovative way. </p>
-                    <img src="images/hoi.jpg" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-                <div id="section14" class="section d-none">
-                    <h2>M2.1PROJECT AT COMPANY IN THE
-                        NETHERLANDS</h2>
-                    <p>Within Ebusco I wanted to perform user-centred design, for which I interview people on the street
-                        and in questionnaires. I ideated using design sketching based the user responses, but also expirimented using Gravity sketch, a VR drawing tool. This lead to a light-emitting
-                        ceiling and angled chairs to increase the presence of windows in the field of view. I used ANSYS simulation to create an optimised bus pole connection, to decrease the blockage of the ceiling lights. 
-					</p>
-					<p>
-                        I also decided to use Unity 3D to improve the audit process of Ebusco since I noticed that the
-                        current process was highly labour intensive.
-                        I completed unity certificates and created a web UI, along with design proposals to improve the
-                        atmosphere on the bus. I developed my compitencies in implementing rea-time graphics, working
-                        outside of the design brief on where I found that the company could be more efficient. I implemented my knowledge from innovation space, M1.2, Design innovation strategies, principles of aesthetics and user experience leading to multiple design proposals.
-
-                    </p>
-                    <img src="images/ebuscoapp.png" alt="bus interior" class="projectimage">
-
-                </div>
-                <div id="section15" class="section d-none">
-                    <h2>DESIGN FOR SOCIAL
-                        INNOVATION</h2>
-                    <p>
-                        In this course, I worked in a group of 4 students to address the issue of sound disruptions at
-                        the library. We conducted user research and identified pain points, then worked to design a
-                        solution that would reduce noise levels while maintaining a comfortable and welcoming
-                        environment. We performed ethnographic research, applied the systemic design methodology and created a concept of a social music streaming service for students. </p>
-                    <img src="images/disgraphic.png" alt="Flowers in Chania" class="projectimage">>
-
-                </div>
-
-
-
             </div>
         </div>
     </div>
 
+    <!-- JavaScript Section -->
+    <script>
+        // Define an array of button information
+        var buttons = [
+            {"textFiles": ["text/cairn.txt"], "imageFiles": ["images/cairn.png"], "title": "CAIRN"},
+            {"textFiles": ["text/edag.txt"], "imageFiles": ["images/edagsketch.png"], "title": "EDAG COMMERCIAL VEHICLE"},
+            {"textFiles": ["text/ebusco.txt"], "imageFiles": ["images/ebuscoapp.png"], "title": "M2.1 EBUSCO"},
+            {"textFiles": ["text/ecomotive.txt"], "imageFiles": ["images/zemphoto1.jpg"], "title": "TU/ECOMOTIVE (Extra)"},
+            {"textFiles": ["text/m12.txt"], "imageFiles": ["images/research2.png"], "title": "M 1.2 DESIGN RESEARCH"},
+            {"textFiles": ["text/m11.txt"], "imageFiles": ["images/m11.jpg"], "title": "M 1.1: INNOVATION SPACE PROJECT"},
+            {"textFiles": ["text/poa.txt"], "imageFiles": ["images/collage.png"], "title": "PERSPECTIVES ON AESTHETICS"},
+            {"textFiles": ["text/cdr.txt"], "imageFiles": ["images/CDRposter.png"], "title": "CONSTRUCTIVE DESIGN RESEARCH"},
+            {"textFiles": ["text/im.txt"], "imageFiles": ["images/IM.jpg","images/immaterials.png"], "title": "INTERACTIVE MATERIALITY"},
+            {"textFiles": ["text/ux.txt", "text/external-text3.txt"], "imageFiles": ["images/uxroom.png"], "title": "USER EXPERIENCE THEORY AND PRACTICE"},
+            {"textFiles": ["text/ded.txt"], "imageFiles": ["images/birdsensor1.png", "images/bird.jpg", "images/download (1).jpg"], "title": "DATA-ENABLED DESIGN"},
+            {"textFiles": ["text/dis.txt", "text/external-text2.txt", "text/external-text3.txt"], "imageFiles": ["images/klaar1.jpg", "images/download (1).jpg"], "title": "DESIGN INNOVATION STRATEGIES"},
+            {"textFiles": ["text/sketch.txt"], "imageFiles": ["images/dolce.png"], "title": "DESIGN SKETCHING"},
+            {"textFiles": ["text/3d.txt"], "imageFiles": ["images/pagan3.png","images/paganibody.jpg"], "title": "3D MODELLING"},
+        ];
 
+        // Function to load external text and image content based on the index
+        function loadExternalContent(index) {
+            var buttonInfo = buttons[index];
 
+            // Fetch and display all text content
+            var textContent = buttonInfo.textFiles.map(function (textFile) {
+                return fetch(textFile).then(response => response.text());
+            });
 
-    <div class="row featurette"
-        style="background-color: rgb(57, 57, 57) ; justify-content: center; padding-bottom: 50px;">
-        <div class="col-md-5" \>
+            Promise.all(textContent)
+                .then(function (contents) {
+                    document.getElementById('externalText').innerHTML = contents.join('<br><br>');
+                })
+                .catch(error => console.error('Error fetching external text:', error));
 
+            var imagesHTML = '';
 
+            // If there's only one image, display it as a regular image
+            if (buttonInfo.imageFiles.length === 1) {
+                imagesHTML = '<img src="' + buttonInfo.imageFiles[0] + '" alt="External Image" class="projectimage img-fluid">';
+            } else {
+                // If there are multiple images, create a carousel
+                imagesHTML = buttonInfo.imageFiles.map(function (imageFile, i) {
+                    return '<div class="carousel-item' + (i === 0 ? ' active' : '') + '"><img src="' + imageFile + '" class="d-block w-100" alt="Image ' + (i + 1) + '"></div>';
+                }).join('');
+            }
 
-            <h2 class="featurette-heading fw-normal lh-1 text-white" style="    margin-top: 0px;">Present </h2>
-            <p class="lead">
-                I approached the EDAG group to explore sustainability within the commercial vehicle market. By combining the expert knowledge and experience from EDAG Helmond, my experience from the research design development track, my practical skills, my passion for automotive design, and my TU/Ecomotive experience, I wish to end my academic career by combining my interests, knowledge, and enthusiasm into a final master project. <br> <br>
+            document.querySelector('#externalImage .carousel-inner').innerHTML = imagesHTML;
+        }
 
-                In this project, I researched the context of commercial vehicles in urban zones regarding the electrification and circularity potential to maximise sustainability in a financially viable method. The car is designed to perform in a product service system and to optimise its lifespan in an economically viable way. This shift to PSS emphasises resource optimisation, reduced environmental impact, and improved economic performance. This is done by considering the product hierarchy and customisation service.
-                <br> <br>
+        // Select all buttons with the class "section-btn"
+        var sectionBtnsContainer = document.querySelector('.hoi');
 
-              I am grateful for the opportunity to collaborate with Wouter and Richard, whose expertise and insights were inspiring. Throughout the project, I found the circular economy concept exciting. Learning about it and reading about its principles was a valuable experience, and implementation was challenging. The project has taught me essential lessons about prioritisation, adaptability, and the power of collaboration. I look forward to applying the knowledge I gained to future endeavours and remain enthusiastic about the circular economy.
-          </p>
+        // Generate buttons dynamically
+        buttons.forEach(function (buttonInfo, index) {
+            var button = document.createElement('button');
+            button.classList.add('btn', 'btn-secondary', 'section-btn');
+            button.style.backgroundImage = 'url("' + buttonInfo.imageFiles[0] + '")';
+            button.innerHTML = '<div>' + buttonInfo.title + '</div>';
+            button.addEventListener('click', function () {
+                loadExternalContent(index);
+            });
 
+            // Append button to the container
+            sectionBtnsContainer.appendChild(button);
+        });
 
+        // Load the first external text file and display image by default
+        loadExternalContent(0);
+    </script>
 
-        </div>
-
-        <div class="col-md-3" style="display: grid;     height: -webkit-fill-available;">
-
-
-
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                src="images/posters4.png" role="img" style="     width: -webkit-fill-available;  float: right;  ; 
-              
-    
-                " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                src="images/posters2.png" role="img" style="     width: -webkit-fill-available;  float: right;  ; 
-          
-
-            " aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-        </div>
-
-    </div>
-
-
-
-    <div class="row " style="background-color: rgb(255, 255, 255) ; justify-content: center;">
-        <div class="col-md-4" \>
-
-
-
-            <h2 class="featurette-heading fw-normal lh-1" style="   margin-top: 0px;">Future </h2>
-            <p class="lead" style="color: black;">
-                I will create my own design studio as a part-time business, because I want to work on shorter and more
-                diverse projects, and I believe that my hardskills, user centred process and innovation method can help
-                me grow in this
-                field. Starting my own business will allow me to choose projects that align with my interests and
-                abilities. It will allow me to work on various design projects, including digital design, graphic
-                design,
-                and product design. I will be able to slowly build up my repetaire and tasks. This will enable me to
-                improve my skills and expertise by constantly engaging with
-                different clients and industries. Working on shorter, more diverse projects will expose me to new
-                challenges, technologies, and design trends, contributing to my professional growth and development.
-            </p>
-
-        </div>
-        <div class="col-md-4" \>
-
-            <p class="lead" style="color: black;">
-
-              I will become a teacher for design sketching classes because I have a passion for design, and want to
-              share my knowledge and skills with others. Teaching design sketching will allow me to inspire and
-              empower future designers. Because I have a strong foundation in design sketching and enjoy helping
-              others develop their sketching abilities, becoming a teacher will allow me to impact students' creative
-              journeys. I found learning from Martijn van der Wiel inspiring and enjoyed being a teacher
-              assistant. Besides, Teaching requires a deep understanding of the subject, pushing me to continuously
-              improve with the latest design techniques and trends. It will also allow me to learn
-              from my students' perspectives and approaches.
-
-          </p>
-
-        </div>
-    </div>
-
-
-    <div class="row " style="background-color: rgb(255, 255, 255) ; justify-content: center;">
-            <div class="col-md-4" \>
-                <p>
-
-                </p>
-                <img src="images/startups.png" alt="Flowers in Chania" class="projectimage">
-
-           </div>
-
-
-         <div class="col-md-4" \>
-                 <img src="images/exploratory.png" alt="Flowers in Chania" class="projectimage" >
-
-
-             </div>
-
-        </div>
-    </div>
-</div>
-
-
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; Philip van Veelen &middot; </p>
-    </footer>
-    </main>
-
-
-
-
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        integrity="sha384
+        -JqIaBkJN6YIjZ5L0OEdT1a9O3gxzMZ9AGgDMNbEpHPPjzA9Dk6BdFj5IBe6lk1U"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSqn/E"
+        integrity="sha384
+        -
+        MNp5w8kODV6vQD3CKJpQVoFqy4Jw8qOgJ1h9MOp6LZ5IapqmE4LUEOxvJr5jv1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        integrity="sha384
+        -
+        JzOeM5f5Nl3E6tVqfCU6tVqUoqLpL+9ad8s/NL5cE9En8zKt6b4ZUpjpu5WJiBR
+        6"
         crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-
 
 </body>
 
