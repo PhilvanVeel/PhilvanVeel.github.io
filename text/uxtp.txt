@@ -1,0 +1,5 @@
+After learning about the state-of-the-art of UX, we took part in a design challenge by PHILIPS to improve the user experience for hospital patients waiting for treatment. We focused on reducing discomfort and anxiety by creating a calming and interactive waiting room environment. My responsibilities included conducting expert interviews, ideation, and prototyping.
+
+The challenge was to reduce anger in patients in the waiting room. In the United States, people can walk into the hospital waiting room. When one's situation is more severe, they can be treated faster, while others have to wait longer. This difference in waiting time can lead to patient frustration, ranging from annoyance to more serious consequences.
+
+Our concept was that the patients required segmentation based on the severity of their medical condition. The waiting room was segmented into four so that the less urgent color codes could not see the desk while the urgent patients could. This layout was paired with an application that indicates waiting times, but is also transparent when an emergency patient has to be treated priorly. The application is visualised as an aquarium.

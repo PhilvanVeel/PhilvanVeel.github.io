@@ -5,16 +5,22 @@
     <style>
         /* Additional styles for button background images */
         .section-btn {
-            background-size: cover; /* Ensure the image covers the entire button without stretching */
-            background-position: center; /* Center the image within the button */
+            background-size: cover;
+            /* Ensure the image covers the entire button without stretching */
+            background-position: center;
+            /* Center the image within the button */
             background-blend-mode: darken;
             padding: 15px;
             text-align: center;
             margin-bottom: 10px;
-            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background to darken the image */
-            color: white; /* Set text color to white */
-            border: none; /* Remove button border */
-            width: 100%; /* Set button width to 100% */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Add a semi-transparent black background to darken the image */
+            color: white;
+            /* Set text color to white */
+            border: none;
+            /* Remove button border */
+            width: 100%;
+            /* Set button width to 100% */
         }
 
         /* Additional styles for the video banner */
@@ -22,12 +28,16 @@
             position: relative;
             width: 100%;
             overflow: hidden;
+            background-color: black;
+
         }
 
         #video {
             width: 100%;
-            height: 100%;
+            height: 400px;
             object-fit: cover;
+            opacity: 0.6;
+            background-color: black;
         }
 
         #text-overlay {
@@ -48,8 +58,10 @@
 
         .carousel-inner img {
             width: 100%;
-            height: auto;
+            max-height: min-content;
             object-fit: cover;
+
+
         }
     </style>
     <title>Philip Van Veelen - Industrial Designer</title>
@@ -62,7 +74,7 @@
 
     <!-- Video banner -->
     <div id="video-banner">
-        <video id="video" autoplay muted loop>
+        <video id="video" autoplay muted loop playbackrate="0.5">
             <source src="video/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -71,6 +83,44 @@
             <p>Industrial Design Portfolio</p>
         </div>
     </div>
+
+
+    <!-- about -->
+    <div class="container">
+        <h1>Professional Identity</h1>
+        <div class="row" style="background-color: darkgrey;">
+      
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/zemsketch.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">   
+         
+            </div>
+                  <!-- Left column with buttons -->
+                  <div class="col-md-9">
+                    <p> My professional identity is rooted in my passion for the process of designing. I experiment with implementing new software, techniques and tricks to steer projects in new directions. I have a deep love for design sketching, which enables me to ideate, communicate and pitch. I am a creator, explorer and accommodator. My favourite design activities are problem exploration, ideation and discussion.</p>
+                </div>
+        </div>
+    </div>
+
+    <!-- Vision -->
+    <div class="container">
+        <h1>Vision</h1>
+        <div class="row" style="margin-bottom: 40px;">
+            <!-- Left column with buttons -->
+            <div class="col-md-9">
+
+                <p>During my master's study, I gained knowledge about user experience and programming, but I also evolved my design process. Because I have always dreamt of designing and building a car, I joined the TU/ecomotive team as chief design. We created a sustainable electric vehicle within a year in this student team. I could express my passion for design sketching and CAD. Still, I also improved my ability to work in multi-disciplinary, multi-cultured teams, integrating hardware, rapid prototyping, and design leadership. Besides my learning activities, I Explored my passion for exploratory sketching broadly. As a designer, I worked on many side projects, including company logos and products. I assisted in design sketch courses, aided the succeeding TU/ecomotive team via workshops and feedback, and followed online courses to discover my preferred method and style.</p>
+            </div>
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/sketching.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">   
+         
+            </div>
+        </div>
+    </div>
+
 
     <!-- Portfolio sections -->
     <div class="container">
@@ -102,24 +152,43 @@
         </div>
     </div>
 
+<!-- Future -->
+    <div class="container">
+        <h1>Future development</h1>
+        <div class="row" style="  margin-bottom: 40px;">
+            <!-- Left column with buttons -->
+            <div class="col-md-9">
+                <p> I will create my own design studio as a part-time business, because I want to work on shorter and more diverse projects, and I believe that my hardskills, user centred process and innovation method can help me grow in this field. Starting my own business will allow me to choose projects that align with my interests and abilities. It will allow me to work on various design projects, including digital design, graphic design, and product design. I will be able to slowly build up my repetaire and tasks. This will enable me to improve my skills and expertise by constantly engaging with different clients and industries. Working on shorter, more diverse projects will expose me to new challenges, technologies, and design trends, contributing to my professional growth and development.
+
+                    I will become a teacher for design sketching classes because I have a passion for design, and want to share my knowledge and skills with others. Teaching design sketching will allow me to inspire and empower future designers. Because I have a strong foundation in design sketching and enjoy helping others develop their sketching abilities, becoming a teacher will allow me to impact students' creative journeys. I found learning from Martijn van der Wiel inspiring and enjoyed being a teacher assistant. Besides, Teaching requires a deep understanding of the subject, pushing me to continuously improve with the latest design techniques and trends. It will also allow me to learn from my students' perspectives and approaches.</p>
+            </div>
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/philip.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">   
+         
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript Section -->
     <script>
         // Define an array of button information
         var buttons = [
-            {"textFiles": ["text/cairn.txt"], "imageFiles": ["images/cairn.png"], "title": "CAIRN"},
-            {"textFiles": ["text/edag.txt"], "imageFiles": ["images/edagsketch.png"], "title": "EDAG COMMERCIAL VEHICLE"},
-            {"textFiles": ["text/ebusco.txt"], "imageFiles": ["images/ebuscoapp.png"], "title": "M2.1 EBUSCO"},
-            {"textFiles": ["text/ecomotive.txt"], "imageFiles": ["images/zemphoto1.jpg"], "title": "TU/ECOMOTIVE (Extra)"},
-            {"textFiles": ["text/m12.txt"], "imageFiles": ["images/research2.png"], "title": "M 1.2 DESIGN RESEARCH"},
-            {"textFiles": ["text/m11.txt"], "imageFiles": ["images/m11.jpg"], "title": "M 1.1: INNOVATION SPACE PROJECT"},
-            {"textFiles": ["text/poa.txt"], "imageFiles": ["images/collage.png"], "title": "PERSPECTIVES ON AESTHETICS"},
-            {"textFiles": ["text/cdr.txt"], "imageFiles": ["images/CDRposter.png"], "title": "CONSTRUCTIVE DESIGN RESEARCH"},
-            {"textFiles": ["text/im.txt"], "imageFiles": ["images/IM.jpg","images/immaterials.png"], "title": "INTERACTIVE MATERIALITY"},
-            {"textFiles": ["text/ux.txt", "text/external-text3.txt"], "imageFiles": ["images/uxroom.png"], "title": "USER EXPERIENCE THEORY AND PRACTICE"},
-            {"textFiles": ["text/ded.txt"], "imageFiles": ["images/birdsensor1.png", "images/bird.jpg", "images/download (1).jpg"], "title": "DATA-ENABLED DESIGN"},
-            {"textFiles": ["text/dis.txt", "text/external-text2.txt", "text/external-text3.txt"], "imageFiles": ["images/klaar1.jpg", "images/download (1).jpg"], "title": "DESIGN INNOVATION STRATEGIES"},
-            {"textFiles": ["text/sketch.txt"], "imageFiles": ["images/dolce.png"], "title": "DESIGN SKETCHING"},
-            {"textFiles": ["text/3d.txt"], "imageFiles": ["images/pagan3.png","images/paganibody.jpg"], "title": "3D MODELLING"},
+            { "textFiles": ["text/cairn.txt"], "imageFiles": ["images/cairn.png", "images/cairnsketch.png", "images/models.jpg", "images/insides.jpg"], "title": "CAIRN" },
+            { "textFiles": ["text/edag.txt"], "imageFiles": ["images/edagp.png", "images/edagp1.png", "images/edagsketch.png", "images/edag2.png", "images/edag4.png"], "title": "EDAG COMMERCIAL VEHICLE" },
+            { "textFiles": ["text/ebusco.txt"], "imageFiles": ["images/ebuscoapp.png", "images/ebuscoprocess.png", "images/ebuscoslide.png", "images/ebuscolights.png", "images/ebuscovr.png"], "title": "M2.1 EBUSCO" },
+            { "textFiles": ["text/ecomotive.txt"], "imageFiles": ["images/zemphoto1.jpg", "images/zem.gif", "images/zemdesert.jpg", "images/zemtop.jpg", "images/zemext.png", "images/zemint.png", "images/zemdesign.png", "images/zembuild2.jpg", "images/zemnews.png"], "title": "TU/ECOMOTIVE (Extra)" },
+            { "textFiles": ["text/m12.txt"], "imageFiles": ["images/research2.png", "images/tue.jpg"], "title": "M 1.2 DESIGN RESEARCH" },
+            { "textFiles": ["text/m11.txt"], "imageFiles": ["images/ux7.jpg"], "title": "M 1.1: INNOVATION SPACE PROJECT" },
+            { "textFiles": ["text/poa.txt"], "imageFiles": ["images/collage.png", "images/agoraphobia.jpg", "images/agoraphobia2.jpg"], "title": "PERSPECTIVES ON AESTHETICS" },
+            { "textFiles": ["text/cdr.txt"], "imageFiles": ["images/CDRposter.png"], "title": "CONSTRUCTIVE DESIGN RESEARCH" },
+            { "textFiles": ["text/im.txt"], "imageFiles": ["images/IM.jpg", "images/immaterials.png"], "title": "INTERACTIVE MATERIALITY" },
+            { "textFiles": ["text/uxtp.txt"], "imageFiles": ["images/uxroom.png"], "title": "USER EXPERIENCE THEORY AND PRACTICE" },
+            { "textFiles": ["text/ded.txt"], "imageFiles": ["images/birdsensor2.png", "images/bird.jpg"], "title": "DATA-ENABLED DESIGN" },
+            // {"textFiles": ["text/dis.txt", "text/external-text2.txt", "text/external-text3.txt"], "imageFiles": ["images/klaar1.jpg", "images/download (1).jpg"], "title": "DESIGN INNOVATION STRATEGIES"},
+            { "textFiles": ["text/sketch.txt"], "imageFiles": ["images/dolce.png", "images/sketching.png", "images/teacherassistant.jpg", "images/sketches.jpeg", "images/motorsketches.png"], "title": "DESIGN SKETCHING" },
+            { "textFiles": ["text/3d.txt"], "imageFiles": ["images/pagan3.png", "images/plasticity.png", "images/stern.png", "images/motorbikescan.png", "images/workflow.png"], "title": "3D MODELLING" },
         ];
 
         // Function to load external text and image content based on the index
@@ -174,21 +243,15 @@
     </script>
 
     <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384
-        -JqIaBkJN6YIjZ5L0OEdT1a9O3gxzMZ9AGgDMNbEpHPPjzA9Dk6BdFj5IBe6lk1U"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384
+        -JqIaBkJN6YIjZ5L0OEdT1a9O3gxzMZ9AGgDMNbEpHPPjzA9Dk6BdFj5IBe6lk1U" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384
         -
-        MNp5w8kODV6vQD3CKJpQVoFqy4Jw8qOgJ1h9MOp6LZ5IapqmE4LUEOxvJr5jv1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384
+        MNp5w8kODV6vQD3CKJpQVoFqy4Jw8qOgJ1h9MOp6LZ5IapqmE4LUEOxvJr5jv1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384
         -
         JzOeM5f5Nl3E6tVqfCU6tVqUoqLpL+9ad8s/NL5cE9En8zKt6b4ZUpjpu5WJiBR
-        6"
-        crossorigin="anonymous"></script>
+        6" crossorigin="anonymous"></script>
 
 </body>
 
