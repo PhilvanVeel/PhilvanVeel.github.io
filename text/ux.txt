@@ -1,4 +1,4 @@
-<h3>User Experience</h3>
+<h3>USER EXPERIENCE</h3>
 In this course, we participated in a design challenge by PHILIPS.The challenge was to reduce anger in patients in the waiting room. In the United States, people can walk into the hospital waiting room. When one's situation is more severe, they can be treated faster, while others have to wait longer. This difference in waiting time can lead to patient frustration, ranging from annoyance to more serious consequences.
 <br><br>
 Our concept was that the patients required segmentation based on the severity of their medical condition. The waiting room was segmented into four so that the less urgent colour codes could not see the desk while the urgent patients could. This layout was paired with an application that indicates waiting times without giving false promises but is transparent when an emergency patient has to be treated priorly. The application is visualised as an aquarium.<br>

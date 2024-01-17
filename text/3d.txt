@@ -1,4 +1,4 @@
-<h3>3D modelling</h3>
+<h3>3D MODELLING</h3>
 I started with a versatile toolkit that includes SolidWorks, Fusion 360, and Blender. Blender, with its creative flexibility, allows me to explore designs rapidly. Its setback has always been that it is less accurate, resulting in fewer engineering applications.
 <br>
 Recently, I've shifted to Plasticity 3D, mixing CAD precision with Blender's creative workflow. Below is an example image of a Pagani car I modelled to learn plasticity. I implemented this program in CAIRN, making the pebbles look exactly as I intended.

@@ -1,1 +1,5 @@
-<h2> cairnstuff </h2>
+<h2>CAIRN</h2>
+
+Inspired by the metaphor of stacking pebbles, Cairn uses movements to convey posture information. This unique interaction aesthetic transforms the posture correction into an aesthetically pleasing and enjoyable experience.
+Cairn combines interaction aesthetics with real-time feedback for a user-centric experience to provide posture feedback. The prototype, developed through electronics, laser-cutting and 3D printing, blends into users' workspaces. The design uses cast latex pressure sensor belts on an office chair and a feedback device on desks, making it easy to use
+The prototype heightens posture awareness, motivates users to maintain their sitting posture, and positively impacts their perceived increase in upright sitting.
