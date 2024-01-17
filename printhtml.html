@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Additional styles for button background images */
+        .section-btn {
+            background-size: cover;
+            /* Ensure the image covers the entire button without stretching */
+            background-position: center;
+            /* Center the image within the button */
+            background-blend-mode: darken;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Add a semi-transparent black background to darken the image */
+            color: white;
+            /* Set text color to white */
+            border: none;
+            /* Remove button border */
+            width: 100%;
+            /* Set button width to 100% */
+        }
+
+        /* Additional styles for the video banner */
+        #video-banner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+
+        }
+
+        #video {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            opacity: 0.6;
+            background-color: black;
+        }
+
+        #text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Carousel styles */
+        .carousel-inner {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            max-height: min-content;
+            object-fit: cover;
+
+
+        }
+        .img-fluid {
+            width: 30%;
+        }
+
+        .h1 {
+            color: blueviolet;
+        }
+    </style>
+    <title>Philip Van Veelen - Industrial Designer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Video banner -->
+    <div id="video-banner">
+        <video id="video" autoplay muted loop playbackrate="0.5">
+            <source src="video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="text-overlay">
+            <h1>Philip van Veelen</h1>
+            <p>Industrial Design Portfolio</p>
+        </div>
+    </div>
+
+
+    <!-- about -->
+    <div class="container">
+        <h1>Professional Identity</h1>
+        <div class="row" style="background-color: rgb(213, 213, 213);">
+
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/zemsketch.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">
+
+            </div>
+            <!-- Left column with buttons -->
+            <div class="col-md-9">
+                <p> I am a designer passionate about enhancing well-being in work and study environments. Driven by
+                    scepticism towards over-reliance on technology, I advocate for simplicity and reduced design
+                    complexity, aiming for long-lasting, easy-to-understand, and aesthetically pleasing products. My
+                    expertise lies in physical product design, where I excel at ideation, 3D modelling, and prototyping.
+                </p>
+                <p>With a product design background in applied science, I discovered a fascination with automotive
+                    design during my furniture design internship. My experience leading the design team at TU/Ecomotive
+                    presented me the importance of aesthetics in driving product desirability. During my second TU/e
+                    automotive internship, I shifted my focus towards well-being in workspaces. I incorporated my
+                    production knowledge to create stand-alone integral products that contribute to a healthier, more
+                    engaging work environment. CAIRN demonstrate my commitment to interactive materiality and temporal
+                    form combined with product design.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Vision -->
+    <div class="container">
+        <h1>Vision</h1>
+        <div class="row" style="margin-bottom: 40px;">
+            <!-- Left column with buttons -->
+            <div class="col-md-9">
+
+                <p>I find inspiration in the beauty of older products, automotive designs, and furniture pieces. I
+                    believe simplicity, lasting appeal and reliability are the best achievable results in design. I
+                    question if technological solutions like recycling or bio-materials are the sole answer to
+                    sustainability. Instead, I believe in preserving and caring for products, emphasising aesthetics,
+                    practical use, and innovation.
+                </p>
+                <p> I believe designers should play a critical role in shaping the products and experiences we encounter
+                    daily. We must challenge the fast-fashion mentality and focus on creating products that enhance our
+                    well-being and have long lifetimes. My design philosophy emphasises ergonomic considerations,
+                    durability, and a sense of beauty that resonates with users.
+                </p>
+                <p> My strengths are sketching, my drive for perfection, and my appreciation for beauty. I am also
+                    well-versed in materials, production processes, and ergonomics. However, I acknowledge that
+                    decision-making can be challenging, and I sometimes struggle to move beyond the ideation stage.
+                    Additionally, my perfectionism can sometimes lead to delays in 3D modelling, and I can sometimes
+                    feel overwhelmed by complex problems.
+                </p>
+            </div>
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/sketching.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container printed-version">
+        <h1>Projects</h1>
+        <div class="row">
+            <!-- Display all projects in rows -->
+                <div id="printedProjects" class="row">
+                    <!-- Project content will be dynamically generated here -->
+                </div>
+        </div>
+    </div>
+
+    <!-- Future -->
+    <div class="container">
+        <h1>Future development</h1>
+        <div class="row" style="  margin-bottom: 40px;">
+            <!-- Left column with buttons -->
+            <div class="col-md-9">
+                <p>I want to become a well-established designer in the Netherlands, collaborating with companies and
+                    inventing products that promote well-being. I want to take risks and develop inspired and helpful
+                    products that make a real difference in improving people's work conditions. Teaching design
+                    sketching is a goal that allows me to share my passion for the subject and show that natural born
+                    talent, expensive tools or perfectionism are required to sketch. I need to develop my connections,
+                    prototyping skills, time management, and design confidence to achieve my aspirations of becoming an
+                    independent designer through experience in a design studio.
+                </p>
+                I envision a future where products use pragmatic aesthetics to create beautiful interactions
+                contributing to work-related well-being. These products will work with users to improve their lives,
+                avoiding invading privacy by capturing personal information as many consumer products do. I am excited
+                to create beautiful products in form, interaction, engineering and ethics through simplicity.
+                </p>
+                <p> I also envision a future where more designers, like musicians or architects, should be recognised
+                    for their unique contributions to society. Only when designers become household names can they be
+                    free to choose projects that align with their values. This future also requires designers to decide
+                    what ethics they uphold. My long-term goal is to become a freelance designer with a part-time role
+                    in education. This dual approach would allow me to create a more flexible and collaborative design
+                    environment, helping develop creativity in students and shaping the future of design. The exchange
+                    of knowledge between designers, educators, and industry is essential to ensure designers have the
+                    autonomy to impact society positively instead of relying on big names to make a living and a name
+                    for themselves.
+                </p>
+            </div>
+            <!-- Right column with sections -->
+            <div class="col-md-3">
+                <img src="images/philip.png" style="    width: -webkit-fill-available; margin-top: 10px; margin-bottom: 10px;
+                ">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Define an array of button information
+        var buttons = [
+            { "textFiles": ["text/cairn.txt"], "imageFiles": ["images/cairn.png", "images/cairnsketch.png", "images/models.jpg", "images/insides.jpg"], "title": "CAIRN" },
+            { "textFiles": ["text/edag.txt"], "imageFiles": ["images/edagp.png", "images/edagp1.png", "images/edagsketch.png", "images/edag2.png", "images/edag4.png"], "title": "EDAG COMMERCIAL VEHICLE" },
+            { "textFiles": ["text/ebusco.txt"], "imageFiles": ["images/ebuscoapp.png", "images/ebuscoprocess.png", "images/ebuscoslide.png", "images/ebuscolights.png", "images/ebuscovr.png"], "title": "M2.1 EBUSCO" },
+            { "textFiles": ["text/ecomotive.txt"], "imageFiles": ["images/zemphoto1.jpg", "images/zem.gif", "images/zemdesert.jpg", "images/zemtop.jpg", "images/zemext.png", "images/zemint.png", "images/zemdesign.png", "images/zembuild2.jpg", "images/zemnews.png"], "title": "TU/ECOMOTIVE (Extra)" },
+            { "textFiles": ["text/m12.txt"], "imageFiles": ["images/vrsetup.png","images/research2.png", "images/tue.jpg"], "title": "M 1.2 DESIGN RESEARCH" },
+            { "textFiles": ["text/m11.txt"], "imageFiles": ["images/ux7.jpg"], "title": "M 1.1: INNOVATION SPACE PROJECT" },
+            { "textFiles": ["text/poa.txt"], "imageFiles": ["images/collage.png", "images/agoraphobia.jpg", "images/agoraphobia2.jpg"], "title": "PERSPECTIVES ON AESTHETICS" },
+            // { "textFiles": ["text/cdr.txt"], "imageFiles": ["images/CDRposter.png"], "title": "CONSTRUCTIVE DESIGN RESEARCH" },
+            { "textFiles": ["text/im.txt"], "imageFiles": ["images/IM.jpg", "images/immaterials.png"], "title": "INTERACTIVE MATERIALITY" },
+            { "textFiles": ["text/ux.txt"], "imageFiles": ["images/uxroom.png"], "title": "USER EXPERIENCE THEORY AND PRACTICE" },
+            { "textFiles": ["text/ded.txt"], "imageFiles": ["images/birdsensor2.png", "images/bird.jpg"], "title": "DATA-ENABLED DESIGN" },
+            // {"textFiles": ["text/dis.txt", "text/external-text2.txt", "text/external-text3.txt"], "imageFiles": ["images/klaar1.jpg", "images/download (1).jpg"], "title": "DESIGN INNOVATION STRATEGIES"},
+            { "textFiles": ["text/sketch.txt"], "imageFiles": ["images/dolce.png", "images/sketching.png", "images/teacherassistant.jpg", "images/sketches.jpeg", "images/motorsketches.png"], "title": "DESIGN SKETCHING" },
+            { "textFiles": ["text/3d.txt"], "imageFiles": ["images/plasticity.png","images/pagan3.png", "images/stern.jpg", "images/3dscan.png", "images/workflow.png", "images/gravsk.png"], "title": "3D MODELLING" },
+            { "textFiles": ["text/compdev.txt"], "imageFiles": ["images/profile.png"], "title": "compitence development" },
+
+        ];
+
+        // Function to load external text and image content based on the index
+        // Function to load external text and image content based on the index for printed version
+    function loadPrintedContent() {
+        var printedProjects = document.getElementById('printedProjects');
+        printedProjects.innerHTML = ''; // Clear previous content
+
+        // Loop through all projects and generate content
+        buttons.forEach(function (buttonInfo, index) {
+            var projectDiv = document.createElement('div');
+            projectDiv.classList.add('col-md-12', 'mb-12', 'text-center');
+
+            // Display project title
+            var titleDiv = document.createElement('div');
+            titleDiv.innerHTML = '<h3>' + buttonInfo.title + '</h3>';
+            projectDiv.appendChild(titleDiv);
+            
+                   // Display project text
+                   var textContent = buttonInfo.textFiles.map(function (textFile) {
+                return fetch(textFile).then(response => response.text());
+            });
+
+            // Display project images
+            var imagesHTML = '';
+            buttonInfo.imageFiles.forEach(function (imageFile, i) {
+                imagesHTML += '<img src="' + imageFile + '" class="img-fluid mb-2" alt="Image ' + (i + 1) + '">';
+            });
+            var imagesDiv = document.createElement('div');
+            imagesDiv.innerHTML = imagesHTML;
+            projectDiv.appendChild(imagesDiv);
+
+     
+
+            Promise.all(textContent)
+                .then(function (contents) {
+                    var textDiv = document.createElement('div');
+                    textDiv.innerHTML = contents.join('<br><br>');
+                    projectDiv.appendChild(textDiv);
+                })
+                .catch(error => console.error('Error fetching external text:', error));
+
+            // Append project to the printedProjects container
+            printedProjects.appendChild(projectDiv);
+        });
+    }
+
+    // Call the function to load printed content
+    loadPrintedContent();
+</script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384
+        -JqIaBkJN6YIjZ5L0OEdT1a9O3gxzMZ9AGgDMNbEpHPPjzA9Dk6BdFj5IBe6lk1U" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384
+        -
+        MNp5w8kODV6vQD3CKJpQVoFqy4Jw8qOgJ1h9MOp6LZ5IapqmE4LUEOxvJr5jv1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384
+        -
+        JzOeM5f5Nl3E6tVqfCU6tVqUoqLpL+9ad8s/NL5cE9En8zKt6b4ZUpjpu5WJiBR
+        6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

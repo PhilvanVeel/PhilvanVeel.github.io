@@ -1,5 +1,9 @@
+<h3>3D modelling</h3>
 I started with a versatile toolkit that includes SolidWorks, Fusion 360, and Blender. Blender, with its creative flexibility, allows me to explore designs rapidly. Its setback has always been that it is less accurate, resulting in fewer engineering applications.
+<br>
 Recently, I've shifted to Plasticity 3D, mixing CAD precision with Blender's creative workflow. Below is an example image of a Pagani car I modelled to learn plasticity. I implemented this program in CAIRN, making the pebbles look exactly as I intended.
+<br>
+
 For immersive 3D ideation, I use GravitySketch VR, enabling me to see a product's scale and ergonomics. 
 I also explored photo-scanning and light-based 3d scanning, capturing real-world geometry, which works well for creating housings around existing products, using props in product renders, or turning physical models into 3d printable versions.
 Practising and discovering these tools empowers me to deliver designs with higher speed, quality and precision.
